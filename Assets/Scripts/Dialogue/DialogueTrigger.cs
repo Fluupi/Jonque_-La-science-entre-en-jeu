@@ -39,7 +39,7 @@ public class DialogueTrigger : MonoBehaviour
     public Image char1, char2;
 
     public Bateau bateau;
-
+    public Image RelatedQuest;
 
     
 
@@ -97,7 +97,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             skipButton.onClick.RemoveListener(() => SkipDialogue());
             bateau.inDialogue = false;
-
+            RelatedQuest.color = Color.grey;
             a1.onClick.RemoveListener(() => A1());
             a2.onClick.RemoveListener(() => A2());
             a3.onClick.RemoveListener(() => A3());

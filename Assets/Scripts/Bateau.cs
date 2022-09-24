@@ -105,4 +105,5 @@ public class Bateau : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawSphere(target, .2f);
     }
+
 }
