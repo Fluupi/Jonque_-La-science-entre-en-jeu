@@ -1,70 +1,86 @@
+using System;
 using UnityEngine;
 
 public class Bateau : MonoBehaviour
 {
     //Components
-    private Rigidbody2D _rb;
+    private Rigidbody2D rb;
 
     //Kick
     [Header("Kick")]
-    [SerializeField] [Tooltip("A définir")] private float _kickSpeed = 10f;
-    [SerializeField] private float _kickDuration;
-    private float _kickLeftTime;
-    private float _kickPercentage;
+    [SerializeField] [Tooltip("A définir")] private float kickSpeed;
+    [SerializeField] private float kickDuration;
+    private float kickLeftTime;
+    private float kickPercentage;
 
     //Movement
     [Header("Speed")]
-    [SerializeField] [Tooltip("A définir")] private float _maxRotationSpeed;
+    [SerializeField] [Tooltip("A définir")] private float maxRotationSpeed;
+    private bool movingStraight;
     private float speed = 0f;
 
     //Target
-    private Vector3 target;
+    [SerializeField] private Vector3 target;
     private float maxDistanceFromTarget = 0.05f;
 
 
     private void Start()
     {
-        _rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    public void Kick()
+    {
+        kickLeftTime = kickDuration;
+        speed = kickSpeed;
     }
 
     private void Update()
     {
         //update target pos
-        target = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z * -1));
+        if(!movingStraight)
+            target = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z * -1));
 
         //stop boat if near enough
         if(Vector3.Distance(transform.position, target) <= maxDistanceFromTarget)
         {
-            _kickLeftTime = 0f;
+            kickLeftTime = 0f;
         }
 
         //update kick%
         float time = Time.deltaTime;
-        _kickLeftTime -= time;
-        _kickPercentage = _kickLeftTime / _kickDuration;
+        kickLeftTime -= time;
+        kickPercentage = kickLeftTime / kickDuration;
 
         //update speed according to kick%
-        if (_kickPercentage > 0f)
+        if (kickPercentage > 0f)
         {
-            speed = _kickSpeed * time * 100 * _kickPercentage;
+            speed = kickSpeed * kickPercentage;
         }
-        else if (_kickPercentage < 0f)
+        else if (kickPercentage < 0f)
         {
-            _kickLeftTime = 0f;
+            kickLeftTime = 0f;
             speed = 0f;
         }
+    }
 
-        //trigger kick boost
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            _kickLeftTime = _kickDuration;
-            speed = _kickSpeed;
-        }
+    public void ResetMovingStraight()
+    {
+        movingStraight = false;
+    }
+
+    public void StraightMove(int dir)
+    {
+        Vector3[] directions = { Vector3.up, Vector3.left, Vector3.down, Vector3.right };
+
+        movingStraight = true;
+        target = transform.position + directions[dir] * kickSpeed * kickDuration / 10;
+        Kick();
     }
 
     private void FixedUpdate()
     {
-        _rb.velocity = transform.up * speed;
+        rb.velocity = transform.up * speed;
         LookTowards();
     }
 
@@ -74,9 +90,15 @@ public class Bateau : MonoBehaviour
         Quaternion rotation = Quaternion.LookRotation(Vector3.forward, target - transform.position);   
         
         //Nerf rotation using maxRotationSpeed (how much if max kick) and kick (energy left from last speedup)
-        rotation = Quaternion.RotateTowards(transform.rotation, rotation, _maxRotationSpeed * _kickPercentage);
+        rotation = Quaternion.RotateTowards(transform.rotation, rotation, maxRotationSpeed * kickPercentage);
 
         //Apply nerfed rotation
-        _rb.SetRotation(rotation);                                                                              
+        rb.SetRotation(rotation);                                                                              
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(target, .2f);
     }
 }
