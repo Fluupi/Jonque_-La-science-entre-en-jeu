@@ -7,6 +7,9 @@ using TMPro;
 using FMODUnity;
 public class DialogueTrigger : MonoBehaviour
 {
+    public UnityEvent<float, float, bool> endDialogueEventFade;
+    public UnityEvent<Vector2, Vector2, bool> endDialogueEventPop;
+    public UnityEvent<Vector2, Vector2, bool> endQuestionEventPop;
     [Header("Stats")]
     [Space(5)]
     public int currentLikability;
@@ -114,7 +117,8 @@ public class DialogueTrigger : MonoBehaviour
         //End Dialogue
         else if(currentDialogue.lastDialogue == 2)
         {
-
+            endDialogueEventFade?.Invoke(.6f, 0f, false);
+            endDialogueEventPop?.Invoke(Vector2.zero, new Vector2(0, -950f), true) ;
             skipButton.onClick.RemoveAllListeners();
             //skipButton.onClick.RemoveListener(() => SkipDialogue());
             bateau.enDialogue = false;
@@ -128,7 +132,7 @@ public class DialogueTrigger : MonoBehaviour
             //a1.onClick.RemoveListener(() => A1());
             //a2.onClick.RemoveListener(() => A2());
             //a3.onClick.RemoveListener(() => A3());
-            Dialogue.SetActive(false);
+            //Dialogue.SetActive(false);
             dialogueName.text = "";
         }
     }
@@ -156,9 +160,10 @@ public class DialogueTrigger : MonoBehaviour
     public void A1()
     {
         FMODUnity.RuntimeManager.PlayOneShot("event:/UI_Menu/UI_Menu_Validation");
-
+        StopAllCoroutines();
         currentLikability += question[questionIndex].karma[0];
-        Answer.SetActive(false);
+        endQuestionEventPop?.Invoke(new Vector2(0, 116), new Vector2(0, -575), true);
+        //Answer.SetActive(false);
         StartDialogue(question[questionIndex].dialogueIndex[0]);
         questionIndex = question[questionIndex].nextQuestionIndex[0];
     }
@@ -166,9 +171,11 @@ public class DialogueTrigger : MonoBehaviour
     public void A2()
     {
         FMODUnity.RuntimeManager.PlayOneShot("event:/UI_Menu/UI_Menu_Validation");
+        StopAllCoroutines();
 
         currentLikability += question[questionIndex].karma[1];
-        Answer.SetActive(false);
+        endQuestionEventPop?.Invoke(new Vector2(0, 116), new Vector2(0, -575), true);
+        //Answer.SetActive(false);
         StartDialogue(question[questionIndex].dialogueIndex[1]);
         questionIndex = question[questionIndex].nextQuestionIndex[1];
 
@@ -177,9 +184,11 @@ public class DialogueTrigger : MonoBehaviour
     public void A3()
     {
         FMODUnity.RuntimeManager.PlayOneShot("event:/UI_Menu/UI_Menu_Validation");
+        StopAllCoroutines();
 
         currentLikability += question[questionIndex].karma[2];
-        Answer.SetActive(false);
+        endQuestionEventPop?.Invoke(new Vector2(0, 116), new Vector2(0, -575), true);
+        //Answer.SetActive(false);
         StartDialogue(question[questionIndex].dialogueIndex[2]);
         questionIndex = question[questionIndex].nextQuestionIndex[2];
 
