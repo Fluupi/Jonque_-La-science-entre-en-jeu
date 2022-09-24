@@ -23,6 +23,7 @@ public class Bateau : MonoBehaviour
     [SerializeField] private Vector3 target;
     private float maxDistanceFromTarget = 0.05f;
 
+    public bool inDialogue;
 
     private void Start()
     {
@@ -37,30 +38,33 @@ public class Bateau : MonoBehaviour
 
     private void Update()
     {
-        //update target pos
-        if(!movingStraight)
-            target = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z * -1));
-
-        //stop boat if near enough
-        if(Vector3.Distance(transform.position, target) <= maxDistanceFromTarget)
+        if (!inDialogue)
         {
-            kickLeftTime = 0f;
-        }
+            //update target pos
+            if(!movingStraight)
+                target = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z * -1));
 
-        //update kick%
-        float time = Time.deltaTime;
-        kickLeftTime -= time;
-        kickPercentage = kickLeftTime / kickDuration;
+            //stop boat if near enough
+            if(Vector3.Distance(transform.position, target) <= maxDistanceFromTarget)
+            {
+                kickLeftTime = 0f;
+            }
 
-        //update speed according to kick%
-        if (kickPercentage > 0f)
-        {
-            speed = kickSpeed * kickPercentage;
-        }
-        else if (kickPercentage < 0f)
-        {
-            kickLeftTime = 0f;
-            speed = 0f;
+            //update kick%
+            float time = Time.deltaTime;
+            kickLeftTime -= time;
+            kickPercentage = kickLeftTime / kickDuration;
+
+            //update speed according to kick%
+            if (kickPercentage > 0f)
+            {
+                speed = kickSpeed * kickPercentage;
+            }
+            else if (kickPercentage < 0f)
+            {
+                kickLeftTime = 0f;
+                speed = 0f;
+            }
         }
     }
 

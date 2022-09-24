@@ -36,23 +36,25 @@ public class DialogueTrigger : MonoBehaviour
     public Button skipButton;
     public TextMeshProUGUI dialogueText;
     public TextMeshProUGUI dialogueName;
-    public Image char1;
+    public Image char1, char2;
 
-
+    public Bateau bateau;
 
 
     
 
 
 
-
+    //Start a dialogue or resume dialogue after question
     public void StartDialogue(int dialogueIndex)
     {
         currentDialogue = dialogue[dialogueIndex];
         textIndex = 0;
 
+        //Invoque seulement lors du premier dialogue
         if (dialogueIndex == 0)
         {
+            bateau.inDialogue = true;
             skipButton.onClick.AddListener(() => SkipDialogue());
             Dialogue.SetActive(true);
             dialogueName.text = dialogue[dialogueIndex].dialogueName;
@@ -62,34 +64,36 @@ public class DialogueTrigger : MonoBehaviour
 
         dialogueText.text = dialogue[dialogueIndex].sentences[textIndex];
         char1.sprite = dialogue[dialogueIndex].char1[textIndex];
+        char2.sprite = dialogue[dialogueIndex].char2[textIndex];
     }
 
+    //Appuyer sur le bouton continuer durant un dialogue
     public void SkipDialogue()
     {
+        //Next texte
         if(textIndex < currentDialogue.numOfSentences - 1)
         {
-            print(0);
-
             textIndex += 1;
             dialogueText.text = currentDialogue.sentences[textIndex];
             char1.sprite = currentDialogue.char1[textIndex];
+            char2.sprite = currentDialogue.char2[textIndex];
         }
+        //First Question
         else if (currentDialogue.lastDialogue == 0)
         {
-            print(1);
-
             StartQuestion(true);
         }
+        // Question that is not first
         else if(currentDialogue.lastDialogue == 1)
         {
-            print(2);
-
             StartQuestion(false);
         }
+        //End Dialogue
         else if(currentDialogue.lastDialogue == 2)
         {
-            print(3);
             skipButton.onClick.RemoveListener(() => SkipDialogue());
+            bateau.inDialogue = false;
+
             a1.onClick.RemoveListener(() => A1());
             a2.onClick.RemoveListener(() => A2());
             a3.onClick.RemoveListener(() => A3());

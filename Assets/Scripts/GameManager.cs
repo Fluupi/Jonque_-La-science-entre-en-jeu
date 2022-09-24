@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     [Header("Cheats")]
     [SerializeField] private bool infiniteEnergy;
 
+    public Bateau bateau;
     private void Start()
     {
         scoreDisplayer.onValueUpdate.Invoke(0);
@@ -27,10 +28,10 @@ public class GameManager : MonoBehaviour
 
         if (energy > 0)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && !bateau.inDialogue)
             {
                 player.ResetMovingStraight();
-                player.Kick();
+                player.Kick();  
                 energy--;
                 energyDisplayer.onValueUpdate.Invoke(energy);
             }
