@@ -49,7 +49,11 @@ public class DialogueTrigger : MonoBehaviour
     public void StartDialogue(int dialogueIndex)
     {
         currentDialogue = dialogue[dialogueIndex];
+        char2.color = Color.grey;
+        char1.color = Color.white;
         textIndex = 0;
+        skipButton.interactable = true;
+
 
         //Invoque seulement lors du premier dialogue
         if (dialogueIndex == 0)
@@ -105,6 +109,9 @@ public class DialogueTrigger : MonoBehaviour
     public void StartQuestion(bool firstQ)
     {
         Answer.SetActive(true);
+        skipButton.interactable = false;
+        char2.color = Color.white;
+        char1.color = Color.grey;
         if (firstQ)
         {
             questionIndex = 0;
