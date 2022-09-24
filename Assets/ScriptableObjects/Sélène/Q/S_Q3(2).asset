@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2768424283a7ca143821039ed9100a29, type: 3}
-  m_Name: S_Q3
+  m_Name: S_Q3(2)
   m_EditorClassIdentifier: 
   answer:
-  - Ce sera l'occasion de faire un beau sacrifice pour Zeus !
   - Vos hommes vous aimeront encore plus si vous les envoyez aux Jeux olympiques.
+  - Ce sera l'occasion de faire un beau sacrifice pour Zeus !
   - "Vous pourriez m\xEAme participer si vous vous d\xE9guisez en homme !"
-  karma: 0000000001000000ffffffff
-  dialogueIndex: 0a0000000b0000000c000000
-  nextQuestionIndex: 
+  karma: 0100000000000000ffffffff
+  dialogueIndex: 070000000800000009000000

@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: becbb707332ed0f45bf1ebca2f855257, type: 3}
-  m_Name: S_D6_3 (15)
+  m_Name: S_D4_2(8)
   m_EditorClassIdentifier: 
   numOfSentences: 2
   sentences:
   - "*S\xE9l\xE8ne reste neutre.*\_"
-<<<<<<<< HEAD:Assets/ScriptableObjects/Sélène/D/S_D4_2(8).asset
   - A la prochaine, beau blond !
   char1:
   - {fileID: 21300000, guid: e1b223047a71cd64d9800546fe04583f, type: 3}
@@ -24,9 +23,4 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
   - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
   dialogueName: Selene
-========
-  char1: []
-  char2: []
-  dialogueName: "S\xE9l\xE8ne"
->>>>>>>> origin/Flupi:Assets/ScriptableObjects/Sélène/D/S_D6_3 (15).asset
   lastDialogue: 2

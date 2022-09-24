@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2768424283a7ca143821039ed9100a29, type: 3}
-  m_Name: S_Q0
+  m_Name: S_Q1(0)
   m_EditorClassIdentifier: 
   answer:
-  - "Vous \xEAtes encore plus belle que la belle H\xE9l\xE8ne."
-  - Je n'ai jamais entendu parler de vous.
+  - "Vous \xEAtes encore plus belle que la belle H\xE9l\xE8ne"
   - "Je pensais que c'\xE9tait la mienne !"
+  - Je n'ai jamais entendu parler de vous.
   karma: 0100000000000000ffffffff
   dialogueIndex: 010000000200000003000000
-  nextQuestionIndex: 010000000100000002000000

@@ -19,11 +19,6 @@ MonoBehaviour:
   char1:
   - {fileID: 21300000, guid: 1fe2a36a3b2a8744abb80ca58947e88c, type: 3}
   char2:
-<<<<<<< HEAD
   - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
   dialogueName: Minos
-=======
-  - {fileID: 21300000, guid: 80aa9194377356c48bccbdf3337d9e92, type: 3}
-  dialogueName: "S\xE9l\xE8ne"
->>>>>>> origin/Flupi
   lastDialogue: 0

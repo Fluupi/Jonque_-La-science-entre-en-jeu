@@ -18,10 +18,9 @@ public class Bateau : MonoBehaviour
     //Movement
     [Header("Speed")]
     [SerializeField] [Tooltip("A définir")] private float maxRotationSpeed;
-
-    [Obsolete("moving straight is not used anymore")]
     private bool movingStraight;
     [SerializeField] private float speed = 0f;
+    private float inertiaBounceFactor = 100f;
 
     //Target
     [SerializeField] private Vector3 target;
@@ -42,43 +41,22 @@ public class Bateau : MonoBehaviour
     {
         if (enDialogue)
         {
-            kickLeftTime = 0f;
-            speed = 0f;
+            speed = 0;
             return;
         }
 
         //update target pos
-        target = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z * -1));
+        if(!movingStraight)
+            target = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z * -1));
 
         //stop boat if near enough
         if(Vector3.Distance(transform.position, target) <= maxDistanceFromTarget)
         {
             kickLeftTime = 0f;
         }
-    }
 
-    [Obsolete("oving straight is not used anymore")]
-    public void ResetMovingStraight()
-    {
-        movingStraight = false;
-    }
-
-    [Obsolete("The method is not used anymore")]
-    public void StraightMove(int dir)
-    {
-        Vector3[] directions = { Vector3.up, Vector3.left, Vector3.down, Vector3.right };
-
-        movingStraight = true;
-        target = transform.position + kickDuration * kickSpeed * directions[dir] / 10;
-        Kick();
-    }
-
-    private Vector2 lastVelocity;
-
-    private void FixedUpdate()
-    {
         //update kick%
-        float time = Time.fixedDeltaTime;
+        float time = Time.deltaTime;
         kickLeftTime -= time;
         kickPercentage = kickLeftTime / kickDuration;
 
@@ -94,21 +72,33 @@ public class Bateau : MonoBehaviour
             kickLeftTime = 0f;
             speed = 0f;
         }
+    }
 
+    public void ResetMovingStraight()
+    {
+        movingStraight = false;
+    }
+
+    public void StraightMove(int dir)
+    {
+        Vector3[] directions = { Vector3.up, Vector3.left, Vector3.down, Vector3.right };
+
+        movingStraight = true;
+        target = transform.position + directions[dir] * kickSpeed * kickDuration / 10;
+        Kick();
+    }
+
+    private void FixedUpdate()
+    {
         rb.velocity = transform.up * speed;
-
-        if (speed < 1)
-            rb.angularVelocity = 0f;
-
-        if(speed > 0)
-            LookTowards();
+        LookTowards();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         FMODUnity.RuntimeManager.PlayOneShot("event:/Ship_Collision");
         transform.Rotate(0, 0, 180);
-        rb.velocity = Vector2.Reflect(lastVelocity, collision.contacts[0].normal);
+        rb.inertia *= inertiaBounceFactor;
     }
 
     private void LookTowards()
