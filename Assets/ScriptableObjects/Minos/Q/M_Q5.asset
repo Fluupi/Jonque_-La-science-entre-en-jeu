@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: M_Q5
   m_EditorClassIdentifier: 
   answer:
-  - Le grand Zeus sera content de nous.
-  - "Le sport est tr\xE8s important pour la sant\xE9"
+  - "Le sport est tr\xE8s important pour la sant\xE9."
   - "De grandes r\xE9compenses attendent les vainqueurs."
-  karma: 0100000000000000ffffffff
-  dialogueIndex: 070000000800000009000000
+  - "Participer \xE0 cette comp\xE9tition pourrait vous attirer les faveurs du grand
+    Zeus."
+  karma: 00000000ffffffff01000000
+  dialogueIndex: 100000001100000012000000
+  nextQuestionIndex: 000000000000000000000000

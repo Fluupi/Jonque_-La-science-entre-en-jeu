@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: M_Q0
   m_EditorClassIdentifier: 
   answer:
-  - J'y vais tout de suite !
+  - Je n'y manquerai pas !
   - "Pos\xE9idon n'est pas mon dieu favori. Je pr\xE9f\xE8re Ath\xE9na."
   - "Oui, oui, \xE7a ne presse pas, j'ai plus important \xE0 faire."
   karma: 0100000000000000ffffffff
   dialogueIndex: 010000000200000003000000
+  nextQuestionIndex: 010000000100000002000000

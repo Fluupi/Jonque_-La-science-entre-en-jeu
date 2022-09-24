@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: M_Q2
   m_EditorClassIdentifier: 
   answer:
-  - Le grand Zeus sera content de nous.
-  - "Le sport est tr\xE8s important pour la sant\xE9"
-  - "De grandes r\xE9compenses attendent les vainqueurs."
-  karma: 0100000000000000ffffffff
+  - "J\u2019ai vu que votre palais est en ruine : vous avez s\xFBrement besoin d\u2019argent."
+  - "Une grande comp\xE9tition sportive se pr\xE9pare.  Je viens vous inviter."
+  - "Une c\xE9r\xE9monie en l\u2019honneur de Zeus se pr\xE9pare. Je viens vous inviter."
+  karma: ffffffff0000000001000000
   dialogueIndex: 070000000800000009000000
+  nextQuestionIndex: 050000000400000004000000

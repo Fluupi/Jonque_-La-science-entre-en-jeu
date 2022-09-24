@@ -23,8 +23,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   char2:
-  - {fileID: 21300000, guid: 80aa9194377356c48bccbdf3337d9e92, type: 3}
-  - {fileID: 21300000, guid: 80aa9194377356c48bccbdf3337d9e92, type: 3}
+  - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
+  - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
   - {fileID: 21300000, guid: 80aa9194377356c48bccbdf3337d9e92, type: 3}
   dialogueName: Indice
   lastDialogue: 2

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2768424283a7ca143821039ed9100a29, type: 3}
+  m_Name: C_Q2
+  m_EditorClassIdentifier: 
+  answer:
+  - Afin de rendre hommage aux dieux en leur montrant un beau spectacle.
+  - "Pour vous confronter aux meilleurs parmi les meilleurs et prouver votre valeur,
+    bien s\xFBr."
+  - "Rien ne vous dit que vous puissiez sortir vainqueur de jeux de cette ampleur,
+    ma ch\xE8re."
+  karma: 0000000001000000ffffffff
+  dialogueIndex: 070000000800000009000000
+  nextQuestionIndex: 040000000400000005000000

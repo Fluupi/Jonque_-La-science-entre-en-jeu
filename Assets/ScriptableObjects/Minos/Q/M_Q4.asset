@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: M_Q4
   m_EditorClassIdentifier: 
   answer:
-  - Le grand Zeus sera content de nous.
-  - "Le sport est tr\xE8s important pour la sant\xE9"
-  - "De grandes r\xE9compenses attendent les vainqueurs."
+  - "Participer \xE0 cette c\xE9r\xE9monie plaira surement \xE0 Zeus, j'en suis certain."
+  - Les guerriers de votre peuple seront ravis de participer.
+  - "Vous \xEAtes s\xFBr que vous n'avez pas besoin d'argent ?"
   karma: 0100000000000000ffffffff
-  dialogueIndex: 070000000800000009000000
+  dialogueIndex: 0d0000000e0000000f000000
+  nextQuestionIndex: 000000000000000000000000

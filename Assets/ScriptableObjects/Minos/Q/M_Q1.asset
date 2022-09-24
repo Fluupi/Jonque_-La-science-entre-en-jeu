@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: M_Q1
   m_EditorClassIdentifier: 
   answer:
-  - "Une c\xE9r\xE9monie en l\u2019honneur de Zeus se pr\xE9pare. Je viens vous inviter."
   - "Une grande comp\xE9tition sportive se pr\xE9pare.  Je viens vous inviter."
+  - "Une c\xE9r\xE9monie en l\u2019honneur de Zeus se pr\xE9pare. Je viens vous inviter."
   - "J\u2019ai vu que votre palais est en ruine : vous avez s\xFBrement besoin d\u2019argent."
-  karma: 0100000000000000ffffffff
+  karma: 0000000001000000ffffffff
   dialogueIndex: 040000000500000006000000
+  nextQuestionIndex: 030000000300000004000000

@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: becbb707332ed0f45bf1ebca2f855257, type: 3}
-  m_Name: S_D1_1(0)
+  m_Name: C_D1_1(0)
   m_EditorClassIdentifier: 
   numOfSentences: 1
   sentences:
-  - "Bonjour l'\xE9tranger. Ma renomm\xE9e est arriv\xE9e jusqu'\xE0 vous ?"
+  - "Ca se voit que vous n'\xEAtes pas d'ici, vous avez l'air plus raffin\xE9 que
+    les autres."
   char1:
-  - {fileID: 21300000, guid: e1b223047a71cd64d9800546fe04583f, type: 3}
+  - {fileID: 21300000, guid: 1fe2a36a3b2a8744abb80ca58947e88c, type: 3}
   char2:
-  - {fileID: 21300000, guid: 80aa9194377356c48bccbdf3337d9e92, type: 3}
-  dialogueName: Selene
+  - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
+  dialogueName: Cynisca
   lastDialogue: 0
