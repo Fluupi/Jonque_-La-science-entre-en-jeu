@@ -17,6 +17,8 @@ MonoBehaviour:
   - "Il y avait une temp\xEAte juste avant votre arriv\xE9e, vous avez pens\xE9 \xE0
     faire vos sacrifices pour Pos\xE9idon ?\n"
   char1:
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 80aa9194377356c48bccbdf3337d9e92, type: 3}
+  char2:
+  - {fileID: 21300000, guid: 80aa9194377356c48bccbdf3337d9e92, type: 3}
   dialogueName: Minos
   lastDialogue: 0

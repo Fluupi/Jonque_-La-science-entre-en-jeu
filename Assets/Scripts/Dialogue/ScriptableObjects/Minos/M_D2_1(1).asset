@@ -17,7 +17,10 @@ MonoBehaviour:
   - '*Minos semble content.*'
   - "Alors comme \xE7a, vous venez passer quelques jours en Cr\xE8te ?"
   char1:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 80aa9194377356c48bccbdf3337d9e92, type: 3}
+  - {fileID: 21300000, guid: 80aa9194377356c48bccbdf3337d9e92, type: 3}
+  char2:
+  - {fileID: 21300000, guid: 80aa9194377356c48bccbdf3337d9e92, type: 3}
+  - {fileID: 21300000, guid: 80aa9194377356c48bccbdf3337d9e92, type: 3}
   dialogueName: Minos
   lastDialogue: 1
