@@ -60,8 +60,8 @@ Material:
     - _FoamDepth: 1.49
     - _FoamSize: 0.15
     - _Metallic: 0.81
-    - _Noise_Scale: 0.512
-    - _Noise_Speed: 1.29
+    - _Noise_Scale: 0.674
+    - _Noise_Speed: 0.1
     - _NormalIntensity: 36.9
     - _QueueControl: 0
     - _QueueOffset: -50
@@ -69,8 +69,8 @@ Material:
     - _Water_Level: 1.74
     - _Water_Speed: 1
     - _WaveScale: 1.45
-    - _Wave_Power: 1
-    - _Wave_Scale: 2.56
+    - _Wave_Power: 21.78
+    - _Wave_Scale: 12.5
     - _Wave_Speed: 0.58
     - _WavesSize: 0.04
     - _deepwater_Level: 2.53
@@ -80,8 +80,8 @@ Material:
     - Color_db0f5dd154424bd28387660b495b7fad: {r: 0.027767893, g: 0.030796839, b: 0.1509434, a: 1}
     - _BaseColor: {r: 0, g: 0.08219698, b: 0.20754719, a: 1}
     - _DeepWater: {r: 0, g: 0.015094344, b: 0.0754717, a: 1}
-    - _DeepWater_Color: {r: 0.072668225, g: 0.25119537, b: 0.6698113, a: 0}
+    - _DeepWater_Color: {r: 0.12019401, g: 0.28261855, b: 0.6886792, a: 0}
     - _FoamColor: {r: 0.08530617, g: 0.13937347, b: 0.254717, a: 1}
-    - _Foam_Color: {r: 0.740566, g: 0.984928, b: 1, a: 0}
-    - _Wave_Color: {r: 0.23349057, g: 0.7160377, b: 0.9339623, a: 0}
+    - _Foam_Color: {r: 0.9150943, g: 0.41869882, b: 0.41869882, a: 0}
+    - _Wave_Color: {r: 0.036712356, g: 0.498362, b: 0.7075472, a: 0}
   m_BuildTextureStacks: []

@@ -17,10 +17,10 @@ MonoBehaviour:
   - "*S\xE9l\xE8ne reste neutre.*\_"
   - A la prochaine, beau blond !
   char1:
-  - {fileID: 21300000, guid: 80aa9194377356c48bccbdf3337d9e92, type: 3}
-  - {fileID: 21300000, guid: 80aa9194377356c48bccbdf3337d9e92, type: 3}
+  - {fileID: 21300000, guid: e1b223047a71cd64d9800546fe04583f, type: 3}
+  - {fileID: 21300000, guid: e1b223047a71cd64d9800546fe04583f, type: 3}
   char2:
   - {fileID: 21300000, guid: 80aa9194377356c48bccbdf3337d9e92, type: 3}
   - {fileID: 21300000, guid: 80aa9194377356c48bccbdf3337d9e92, type: 3}
-  dialogueName: Minos
+  dialogueName: Selene
   lastDialogue: 2

@@ -16,8 +16,8 @@ MonoBehaviour:
   sentences:
   - "Bonjour l'\xE9tranger. Ma renomm\xE9e est arriv\xE9e jusqu'\xE0 vous ?"
   char1:
-  - {fileID: 21300000, guid: 80aa9194377356c48bccbdf3337d9e92, type: 3}
+  - {fileID: 21300000, guid: e1b223047a71cd64d9800546fe04583f, type: 3}
   char2:
   - {fileID: 21300000, guid: 80aa9194377356c48bccbdf3337d9e92, type: 3}
-  dialogueName: Minos
+  dialogueName: Selene
   lastDialogue: 0

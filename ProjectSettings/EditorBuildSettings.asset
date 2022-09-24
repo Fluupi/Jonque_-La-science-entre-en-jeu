@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Sneakysunset.unity
+    guid: b3f9233544fddac479e060e1fe88c84d
   m_configObjects: {}

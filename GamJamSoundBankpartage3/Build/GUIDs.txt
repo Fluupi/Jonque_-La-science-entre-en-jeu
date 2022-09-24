@@ -1,0 +1,10 @@
+{f671bca3-1f54-40d4-8aca-9c7fe2455e08} bank:/Master
+{6e6c9c77-6e2f-0c96-0c83-168113b65890} bank:/Master.strings
+{d8f5a7bd-8350-41ef-931d-2137c2dca0ed} bus:/
+{7cc6236b-dd38-4f6e-aae3-6184f3f39dab} bus:/Reverb
+{40f0c4ad-a914-40b2-90a4-93cd29934c3a} event:/Amb_Ocean
+{6701d163-4d3f-424f-9db5-e7b0ef76def4} event:/Ship_Movement
+{b6f971e7-00b0-4189-a9ab-5dd735764e0c} event:/UI_Menu/UI_Menu_Deny
+{e5954a47-7726-4f66-ab82-f50b9860f1bb} event:/UI_Menu/UI_Menu_Movement
+{56081a35-85bb-4775-a05e-73266fe4b7dc} event:/UI_Menu/UI_Menu_Skip
+{5c57a6e3-98ba-4e0e-9f50-95b36f42ff8c} event:/UI_Menu/UI_Menu_Validation

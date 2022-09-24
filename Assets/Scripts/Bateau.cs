@@ -96,6 +96,7 @@ public class Bateau : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Ship_Collision");
         transform.Rotate(0, 0, 180);
         rb.inertia *= inertiaBounceFactor;
     }

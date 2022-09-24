@@ -344,8 +344,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../../../../Fmmod Projects/GamJamSoundBankpartage/GamJamSoundBankpartage.fspro
-  sourceBankPath: ../../../../Fmmod Projects/GamJamSoundBankpartage/Build
+  sourceProjectPath: GamJamSoundBankpartage3/GamJamSoundBankpartage3.fspro
+  sourceBankPath: GamJamSoundBankpartage3/Build
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1

@@ -32,8 +32,9 @@ public class GameManager : MonoBehaviour
             {
                 if(Random.Range(0,1) > .5f)
                 {
-                    FMODUnity.RuntimeManager.PlayOneShot("event:/UI_Menu/Ship_Movement");
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Ship_Movement");
                 }
+                //FMODUnity.RuntimeManager.PlayOneShot("event:/UI_Menu/Ship_Movement");
 
                 player.ResetMovingStraight();
                 player.Kick();  
