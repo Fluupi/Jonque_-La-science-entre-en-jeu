@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
 
         if (energy > 0)
         {
-            if (Input.GetMouseButtonDown(0) && !bateau.inDialogue)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 player.ResetMovingStraight();
                 player.Kick();  

@@ -38,7 +38,6 @@ public class DialogueTrigger : MonoBehaviour
     public TextMeshProUGUI dialogueName;
     public Image char1, char2;
 
-    public Bateau bateau;
     public Image RelatedQuest;
 
     
@@ -58,7 +57,6 @@ public class DialogueTrigger : MonoBehaviour
         //Invoque seulement lors du premier dialogue
         if (dialogueIndex == 0)
         {
-            bateau.inDialogue = true;
             skipButton.onClick.AddListener(() => SkipDialogue());
             Dialogue.SetActive(true);
             dialogueName.text = dialogue[dialogueIndex].dialogueName;
@@ -96,7 +94,6 @@ public class DialogueTrigger : MonoBehaviour
         else if(currentDialogue.lastDialogue == 2)
         {
             skipButton.onClick.RemoveListener(() => SkipDialogue());
-            bateau.inDialogue = false;
             RelatedQuest.color = Color.grey;
             a1.onClick.RemoveListener(() => A1());
             a2.onClick.RemoveListener(() => A2());
