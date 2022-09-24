@@ -10,8 +10,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int energy;
 
     [Header("UI")]
-    [SerializeField] private IntDisplayer scoreDisplayer;
-    [SerializeField] private IntDisplayer energyDisplayer;
+    [SerializeField] private EnergyDisplayer scoreDisplayer;
+    [SerializeField] private EnergyDisplayer energyDisplayer;
 
     [Header("Cheats")]
     [SerializeField] private bool infiniteEnergy;

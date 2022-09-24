@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class IntDisplayer : MonoBehaviour
+public class EnergyDisplayer : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI text;
 
