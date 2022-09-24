@@ -15,7 +15,7 @@ public class LevelEndDisplay : MonoBehaviour
     {
         zeus.sprite = zeusFaces[victory ? 0 : 1];
 
-        text.text = victory ? "Bravo ! Vous avez réussi à convaincre" : "Incapable ! Vous n'avez convaincu " + (charNames.Length > 0 ? "que" : "personne !");
+        text.text = victory ? "Bravo ! Vous avez réussi à convaincre\n" : "Incapable ! Vous n'avez convaincu " + (charNames.Length > 0 ? "que\n" : "personne !");
 
         if (charNames.Length == 0)
             return;
@@ -24,7 +24,9 @@ public class LevelEndDisplay : MonoBehaviour
         {
             for(int i=0; i<charNames.Length; i++)
             {
-                text.text += (i == 0 ? "" : (i == charNames.Length - 1 ? " et " : ", ")) + charNames[i];
+                text.text += charNames[i];
+                if(i!= charNames.Length - 1)
+                    text.text += (i != charNames.Length - 2 ? ",\n" : " et\n");
             }
         }
     }

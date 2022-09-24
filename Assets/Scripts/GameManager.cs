@@ -7,67 +7,49 @@ public class GameManager : MonoBehaviour
 {
     [Header("Game")]
     [SerializeField] private Bateau player;
-    [SerializeField] private int energy;
+    [SerializeField] private LevelEndDisplay levelEndDisplay;
+    [SerializeField] [Range(0,2)] private int appliquerResNum;
+    [SerializeField] private resultat[] res;
 
-    [Header("UI")]
-    [SerializeField] private EnergyDisplayer scoreDisplayer;
-    [SerializeField] private EnergyDisplayer energyDisplayer;
-
-    [Header("Cheats")]
-    [SerializeField] private bool infiniteEnergy;
-
-    public Bateau bateau;
     private void Start()
     {
-        scoreDisplayer.onValueUpdate.Invoke(0);
+        res = new resultat[3];
+        string[] n = { "echo", "coco", "pasGrec" };
+        string[] n2 = {};
+
+        res[0].victoire = true;
+        res[0].noms = n;
+
+        res[1].victoire = false;
+        res[1].noms = n;
+
+        res[2].victoire = false;
+        res[2].noms = n2;
     }
 
     private void Update()
     {
-        CheckCheats();
-
-        if (energy > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && !player.enDialogue)
         {
-            if (Input.GetKeyDown(KeyCode.Space) && !bateau.enDialogue)
+            if(Random.Range(0,1) > .5f)
             {
-                if(Random.Range(0,1) > .5f)
-                {
-                    FMODUnity.RuntimeManager.PlayOneShot("event:/Ship_Movement");
-                }
-                //FMODUnity.RuntimeManager.PlayOneShot("event:/UI_Menu/Ship_Movement");
-
-                player.ResetMovingStraight();
-                player.Kick();  
-                energy--;
-                energyDisplayer.onValueUpdate.Invoke(energy);
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Ship_Movement");
             }
 
-            /*if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
-            {
-                int dir;
-
-                if (Input.GetKeyDown(KeyCode.Z))
-                    dir = 0;
-                else if (Input.GetKeyDown(KeyCode.Q))
-                    dir = 1;
-                else if (Input.GetKeyDown(KeyCode.S))
-                    dir = 2;
-                else
-                    dir = 3;
-
-                player.StraightMove(dir);
-                energy--;
-                energyDisplayer.onValueUpdate.Invoke(energy);
-            }*/
+            player.Kick();
         }
-    }
 
-    private void CheckCheats()
-    {
-        if (infiniteEnergy && energy < 5)
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            energy++;
-            energyDisplayer.onValueUpdate.Invoke(energy);
+            levelEndDisplay.gameObject.SetActive(true);
+
+            levelEndDisplay.Display(res[appliquerResNum].victoire, res[appliquerResNum].noms);
         }
     }
+}
+
+struct resultat
+{
+    public bool victoire;
+    public string[] noms;
 }
