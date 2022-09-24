@@ -28,15 +28,20 @@ public class GameManager : MonoBehaviour
 
         if (energy > 0)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && !bateau.enDialogue)
             {
+                if(Random.Range(0,1) > .5f)
+                {
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/UI_Menu/Ship_Movement");
+                }
+
                 player.ResetMovingStraight();
                 player.Kick();  
                 energy--;
                 energyDisplayer.onValueUpdate.Invoke(energy);
             }
 
-            if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
+            /*if (Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
             {
                 int dir;
 
@@ -52,7 +57,7 @@ public class GameManager : MonoBehaviour
                 player.StraightMove(dir);
                 energy--;
                 energyDisplayer.onValueUpdate.Invoke(energy);
-            }
+            }*/
         }
     }
 

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
+using FMODUnity;
 public class DialogueTrigger : MonoBehaviour
 {
     [Header("Stats")]
@@ -40,7 +41,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public Image RelatedQuest;
     public float dialogueSpeed;
-    
+    public Bateau bateau;
 
     IEnumerator TypeSentence(string sentence)
     {
@@ -55,6 +56,7 @@ public class DialogueTrigger : MonoBehaviour
     //Start a dialogue or resume dialogue after question
     public void StartDialogue(int dialogueIndex)
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UI_Menu/UI_Menu_Skip");
         currentDialogue = dialogue[dialogueIndex];
         char2.color = Color.grey;
         char1.color = Color.white;
@@ -67,7 +69,7 @@ public class DialogueTrigger : MonoBehaviour
         {
             questionIndex = 0;
 
-            bateau.inDialogue = true;
+            bateau.enDialogue = true;
             //skipButton.onClick.
 
             skipButton.onClick.AddListener(() => SkipDialogue());
@@ -90,6 +92,7 @@ public class DialogueTrigger : MonoBehaviour
 
         if (textIndex < currentDialogue.numOfSentences - 1)
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/UI_Menu/UI_Menu_Skip");
             StopAllCoroutines();
             dialogueText.text = "";
             textIndex += 1;
@@ -114,7 +117,7 @@ public class DialogueTrigger : MonoBehaviour
 
             skipButton.onClick.RemoveAllListeners();
             //skipButton.onClick.RemoveListener(() => SkipDialogue());
-            bateau.inDialogue = false;
+            bateau.enDialogue = false;
 
             skipButton.onClick.RemoveListener(() => SkipDialogue());
 
@@ -152,6 +155,8 @@ public class DialogueTrigger : MonoBehaviour
 
     public void A1()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UI_Menu/UI_Menu_Validation");
+
         currentLikability += question[questionIndex].karma[0];
         Answer.SetActive(false);
         StartDialogue(question[questionIndex].dialogueIndex[0]);
@@ -159,6 +164,8 @@ public class DialogueTrigger : MonoBehaviour
 
     public void A2()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UI_Menu/UI_Menu_Validation");
+
         currentLikability += question[questionIndex].karma[1];
         Answer.SetActive(false);
         StartDialogue(question[questionIndex].dialogueIndex[1]);
@@ -166,16 +173,11 @@ public class DialogueTrigger : MonoBehaviour
 
     public void A3()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UI_Menu/UI_Menu_Validation");
+
         currentLikability += question[questionIndex].karma[2];
         Answer.SetActive(false);
         StartDialogue(question[questionIndex].dialogueIndex[2]);
     }
 
-
-
-/*    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-            StartDialogue(0);
-    }*/
 }

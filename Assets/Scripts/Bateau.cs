@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Bateau : MonoBehaviour
 {
+    public bool enDialogue;
+
     //Components
     private Rigidbody2D rb;
 
@@ -37,6 +39,12 @@ public class Bateau : MonoBehaviour
 
     private void Update()
     {
+        if (enDialogue)
+        {
+            speed = 0;
+            return;
+        }
+
         //update target pos
         if(!movingStraight)
             target = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z * -1));
