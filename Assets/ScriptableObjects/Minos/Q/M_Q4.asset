@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2768424283a7ca143821039ed9100a29, type: 3}
-  m_Name: M_Q1(0)
+  m_Name: M_Q4
   m_EditorClassIdentifier: 
   answer:
-  - J'y vais tout de suite !
-  - "Pos\xE9idon n'est pas mon dieu favori. Je pr\xE9f\xE8re Ath\xE9na."
-  - "Oui, oui, \xE7a ne presse pas, j'ai plus important \xE0 faire."
+  - Le grand Zeus sera content de nous.
+  - "Le sport est tr\xE8s important pour la sant\xE9"
+  - "De grandes r\xE9compenses attendent les vainqueurs."
   karma: 0100000000000000ffffffff
-  dialogueIndex: 010000000200000003000000
+  dialogueIndex: 070000000800000009000000

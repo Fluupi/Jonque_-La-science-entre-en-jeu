@@ -76,8 +76,8 @@ public class DialogueTrigger : MonoBehaviour
             Dialogue.SetActive(true);
             dialogueName.text = dialogue[dialogueIndex].dialogueName;
         }
-        else
-            questionIndex++;
+/*        else
+            questionIndex++;*/
         StartCoroutine(TypeSentence(dialogue[dialogueIndex].sentences[textIndex]));
         //dialogueText.text = dialogue[dialogueIndex].sentences[textIndex];
         char1.sprite = dialogue[dialogueIndex].char1[textIndex];
@@ -160,6 +160,7 @@ public class DialogueTrigger : MonoBehaviour
         currentLikability += question[questionIndex].karma[0];
         Answer.SetActive(false);
         StartDialogue(question[questionIndex].dialogueIndex[0]);
+        questionIndex = question[questionIndex].nextQuestionIndex[0];
     }
 
     public void A2()
@@ -169,6 +170,8 @@ public class DialogueTrigger : MonoBehaviour
         currentLikability += question[questionIndex].karma[1];
         Answer.SetActive(false);
         StartDialogue(question[questionIndex].dialogueIndex[1]);
+        questionIndex = question[questionIndex].nextQuestionIndex[1];
+
     }
 
     public void A3()
@@ -178,6 +181,8 @@ public class DialogueTrigger : MonoBehaviour
         currentLikability += question[questionIndex].karma[2];
         Answer.SetActive(false);
         StartDialogue(question[questionIndex].dialogueIndex[2]);
+        questionIndex = question[questionIndex].nextQuestionIndex[2];
+
     }
 
 }

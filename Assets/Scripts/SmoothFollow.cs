@@ -9,6 +9,8 @@ public class SmoothFollow : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
     public Transform topRightB, bottomLeftB;
     BoxCollider2D cameraBox;
+
+
     void Update()
     {
         Vector2 targetPos = playerT.position;
@@ -17,7 +19,7 @@ public class SmoothFollow : MonoBehaviour
         transform.position = Vector3.SmoothDamp(new Vector3(transform.position.x, transform.position.y, -7), new Vector3(targetPos.x, targetPos.y, -7), ref velocity, smooth);
     }   
 
-    /*void AspectRationBoxChange()
+    void AspectRationBoxChange()
     {
         //16:10 ratio
         if (Camera.main.aspect >= (1.6f) && Camera.main.aspect < (1.7f))
@@ -38,5 +40,5 @@ public class SmoothFollow : MonoBehaviour
         //3:2 ratio
         if (Camera.main.aspect >= (1.5f) && Camera.main.aspect < (1.6f))
             cameraBox.size = new Vector2(21.6f, 14.3f);
-    }*/
+    }
 }

@@ -8,4 +8,5 @@ public class QuestionBranch : ScriptableObject
     public string[] answer;
     public int[] karma;
     public int[] dialogueIndex;
+    public int[] nextQuestionIndex;
 }
