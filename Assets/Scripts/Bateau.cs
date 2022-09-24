@@ -32,6 +32,11 @@ public class Bateau : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    public void SwitchEnDialogue(bool inOrOut)
+    {
+        enDialogue = inOrOut;
+    }
+
     public void Kick()
     {
         kickLeftTime = kickDuration;

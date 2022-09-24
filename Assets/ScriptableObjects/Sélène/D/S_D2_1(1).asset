@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: becbb707332ed0f45bf1ebca2f855257, type: 3}
-  m_Name: S_D2_2 (2)
+  m_Name: S_D2_1(1)
   m_EditorClassIdentifier: 
   numOfSentences: 2
   sentences:
-<<<<<<<< HEAD:Assets/ScriptableObjects/Sélène/D/S_D2_1(1).asset
-  - "*S\xE9l\xE8ne semble contente.*"
+  - "*S\xE9l\xE8ne semble heureuse de cette r\xE9ponse.*"
   - Vous venez admirer nos remparts ?
   char1:
   - {fileID: 21300000, guid: e1b223047a71cd64d9800546fe04583f, type: 3}
@@ -24,10 +23,4 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
   - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
   dialogueName: Selene
-========
-  - "*S\xE9l\xE8ne fronce les sourcils.*"
-  char1: []
-  char2: []
-  dialogueName: "S\xE9l\xE8ne"
->>>>>>>> origin/Flupi:Assets/ScriptableObjects/Sélène/D/S_D2_2 (2).asset
   lastDialogue: 1
