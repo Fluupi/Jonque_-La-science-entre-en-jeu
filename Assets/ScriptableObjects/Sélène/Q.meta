@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 0dc4edfc20c24e44b98ef64742505934
+=======
+guid: 165db025a269f49468b9167fc5ab7652
+>>>>>>> origin/Flupi
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

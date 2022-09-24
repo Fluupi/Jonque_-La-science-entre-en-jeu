@@ -93,7 +93,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8755903582004210565, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: m_Name
+<<<<<<< HEAD
       value: Cynisca
+=======
+      value: "S\xE9l\xE8ne Variant"
+>>>>>>> origin/Flupi
       objectReference: {fileID: 0}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: a1
@@ -160,6 +164,7 @@ PrefabInstance:
       value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+<<<<<<< HEAD
       propertyPath: dialogue.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: a5be1641431d3f4459558847b7abbdd1, type: 2}
@@ -211,6 +216,111 @@ PrefabInstance:
       propertyPath: question.Array.data[2]
       value: 
       objectReference: {fileID: 11400000, guid: 8a79da53337b7004ca3b2ed2a186fd0d, type: 2}
+=======
+      propertyPath: dialogue.Array.size
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: question.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: b3116b88e852de647954266362b0ad3e, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 21b8249439d85b04f9df8f56dd0589bf, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 129d3c4d01ccd0c4b9701c43d1603382, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: a4235504e7eb3e241b094ff36725c0f2, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: fbab1afa61409cb4a81ba7b839340ee9, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7178ff7842ed8b04997ad15531368fa2, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: ae528788d0d5e2e4badcc160f231218d, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: 50562f9e2271c1d4d83d87ba47524f9e, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: 071a6d7a73f14fe449889574e14acbbc, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: ccd7b28546adeaf42a69b4966f5986be, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: question.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: f6cb7b8cd9ebb38499ef35219dcb2a33, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: question.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3f287427489e21640ae14bf1555e4102, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: question.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4e9267c80b5702f4a8d842ffec189ce7, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: question.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 60260edd0b74d724796d45767a80b527, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: question.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4cb8c1ed4903ece43a6984a81acda583, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: question.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 89a225e9183fdcb4580a81ac83fb16a6, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[10]
+      value: 
+      objectReference: {fileID: 11400000, guid: ccad174aa6bf6514e92844b27999c3a2, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[11]
+      value: 
+      objectReference: {fileID: 11400000, guid: 71b5489cbf78f434fb79d939f15496a0, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[12]
+      value: 
+      objectReference: {fileID: 11400000, guid: 63acf3e5bc36d754698d9ea2fa6f6b48, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[13]
+      value: 
+      objectReference: {fileID: 11400000, guid: ba2e40244f5a3b943ae5c9fe58ac8b4b, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[14]
+      value: 
+      objectReference: {fileID: 11400000, guid: fdc88aff11ceca444b06a4ec174a73c2, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[15]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3d29035bd25f4504a8df5f429b22b754, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[16]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1f5f984922c4cb84e9d5624b6ed35853, type: 2}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: dialogue.Array.data[17]
+      value: 
+      objectReference: {fileID: 11400000, guid: 128552a0b350e2a4a8aeee75830b674e, type: 2}
+>>>>>>> origin/Flupi
     - target: {fileID: 8755903582004210571, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: m_RootOrder
       value: 0

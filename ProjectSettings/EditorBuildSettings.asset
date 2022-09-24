@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Sneakysunset.unity
-    guid: b3f9233544fddac479e060e1fe88c84d
+    path: Assets/Scenes/Menu.unity
+    guid: fa34e6df7e520d64b9d361005f333973
+  - enabled: 1
+    path: Assets/Scenes/Flupi.unity
+    guid: 395d3cf20b93356498c39c10a29be771
   m_configObjects: {}
