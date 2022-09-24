@@ -8,7 +8,7 @@ public struct KeyEvent
 {
     public KeyCode key;
     public UnityEvent EventKeyPressed;
-    public UnityEvent EventKeyReleased;
+    //public UnityEvent EventKeyReleased;
 }
 
 public class InputEventHandler : MonoBehaviour
@@ -19,8 +19,11 @@ public class InputEventHandler : MonoBehaviour
     {
         foreach (var kEvent in keyEvents)
         {
-            if (Input.GetKeyDown(kEvent.key)) kEvent.EventKeyPressed?.Invoke();
-            if (Input.GetKeyUp(kEvent.key)) kEvent.EventKeyReleased?.Invoke();
+            if (Input.GetKeyDown(kEvent.key))
+            {
+                kEvent.EventKeyPressed?.Invoke();
+            }
+            //if (Input.GetKeyUp(kEvent.key)) kEvent.EventKeyReleased?.Invoke();
         }
     }
 }

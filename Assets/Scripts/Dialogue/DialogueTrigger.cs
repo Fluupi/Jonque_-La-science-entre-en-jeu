@@ -40,10 +40,18 @@ public class DialogueTrigger : MonoBehaviour
 
     public Bateau bateau;
     public Image RelatedQuest;
-
+    public float dialogueSpeed;
     
 
-
+    IEnumerator TypeSentence(string sentence)
+    {
+        dialogueText.text = "";
+        foreach(char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(dialogueSpeed);
+        }
+    }
 
     //Start a dialogue or resume dialogue after question
     public void StartDialogue(int dialogueIndex)
@@ -58,15 +66,17 @@ public class DialogueTrigger : MonoBehaviour
         //Invoque seulement lors du premier dialogue
         if (dialogueIndex == 0)
         {
+            questionIndex = 0;
             bateau.inDialogue = true;
+            //skipButton.onClick.
             skipButton.onClick.AddListener(() => SkipDialogue());
             Dialogue.SetActive(true);
             dialogueName.text = dialogue[dialogueIndex].dialogueName;
         }
         else
             questionIndex++;
-
-        dialogueText.text = dialogue[dialogueIndex].sentences[textIndex];
+        StartCoroutine(TypeSentence(dialogue[dialogueIndex].sentences[textIndex]));
+        //dialogueText.text = dialogue[dialogueIndex].sentences[textIndex];
         char1.sprite = dialogue[dialogueIndex].char1[textIndex];
         char2.sprite = dialogue[dialogueIndex].char2[textIndex];
     }
@@ -75,15 +85,20 @@ public class DialogueTrigger : MonoBehaviour
     public void SkipDialogue()
     {
         //Next texte
-        if(textIndex < currentDialogue.numOfSentences - 1)
+
+
+        if (textIndex < currentDialogue.numOfSentences - 1)
         {
+            StopAllCoroutines();
+            dialogueText.text = "";
             textIndex += 1;
-            dialogueText.text = currentDialogue.sentences[textIndex];
+            StartCoroutine(TypeSentence(currentDialogue.sentences[textIndex]));
+
             char1.sprite = currentDialogue.char1[textIndex];
             char2.sprite = currentDialogue.char2[textIndex];
         }
         //First Question
-        else if (currentDialogue.lastDialogue == 0)
+        else if (currentDialogue.lastDialogue == 0) 
         {
             StartQuestion(true);
         }
@@ -95,12 +110,16 @@ public class DialogueTrigger : MonoBehaviour
         //End Dialogue
         else if(currentDialogue.lastDialogue == 2)
         {
-            skipButton.onClick.RemoveListener(() => SkipDialogue());
+            skipButton.onClick.RemoveAllListeners();
+            //skipButton.onClick.RemoveListener(() => SkipDialogue());
             bateau.inDialogue = false;
             RelatedQuest.color = Color.grey;
-            a1.onClick.RemoveListener(() => A1());
-            a2.onClick.RemoveListener(() => A2());
-            a3.onClick.RemoveListener(() => A3());
+            a1.onClick.RemoveAllListeners();
+            a2.onClick.RemoveAllListeners();
+            a3.onClick.RemoveAllListeners();
+            //a1.onClick.RemoveListener(() => A1());
+            //a2.onClick.RemoveListener(() => A2());
+            //a3.onClick.RemoveListener(() => A3());
             Dialogue.SetActive(false);
             dialogueName.text = "";
         }
