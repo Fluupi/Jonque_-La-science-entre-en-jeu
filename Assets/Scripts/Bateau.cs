@@ -17,13 +17,12 @@ public class Bateau : MonoBehaviour
     [Header("Speed")]
     [SerializeField] [Tooltip("A définir")] private float maxRotationSpeed;
     private bool movingStraight;
-    private float speed = 0f;
+    [SerializeField] private float speed = 0f;
+    private float inertiaBounceFactor = 100f;
 
     //Target
     [SerializeField] private Vector3 target;
     private float maxDistanceFromTarget = 0.05f;
-
-    public bool inDialogue;
 
     private void Start()
     {
@@ -38,33 +37,32 @@ public class Bateau : MonoBehaviour
 
     private void Update()
     {
-        if (!inDialogue)
+        //update target pos
+        if(!movingStraight)
+            target = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z * -1));
+
+        //stop boat if near enough
+        if(Vector3.Distance(transform.position, target) <= maxDistanceFromTarget)
         {
-            //update target pos
-            if(!movingStraight)
-                target = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z * -1));
+            kickLeftTime = 0f;
+        }
 
-            //stop boat if near enough
-            if(Vector3.Distance(transform.position, target) <= maxDistanceFromTarget)
-            {
-                kickLeftTime = 0f;
-            }
+        //update kick%
+        float time = Time.deltaTime;
+        kickLeftTime -= time;
+        kickPercentage = kickLeftTime / kickDuration;
 
-            //update kick%
-            float time = Time.deltaTime;
-            kickLeftTime -= time;
-            kickPercentage = kickLeftTime / kickDuration;
+        speed = kickSpeed;
 
-            //update speed according to kick%
-            if (kickPercentage > 0f)
-            {
-                speed = kickSpeed * kickPercentage;
-            }
-            else if (kickPercentage < 0f)
-            {
-                kickLeftTime = 0f;
-                speed = 0f;
-            }
+        //update speed according to kick%
+        if (kickPercentage > 0f)
+        {
+            speed *= kickPercentage;
+        }
+        else if (kickPercentage < 0f)
+        {
+            kickLeftTime = 0f;
+            speed = 0f;
         }
     }
 
@@ -86,6 +84,12 @@ public class Bateau : MonoBehaviour
     {
         rb.velocity = transform.up * speed;
         LookTowards();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        transform.Rotate(0, 0, 180);
+        rb.inertia *= inertiaBounceFactor;
     }
 
     private void LookTowards()

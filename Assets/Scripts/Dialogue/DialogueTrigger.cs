@@ -38,7 +38,6 @@ public class DialogueTrigger : MonoBehaviour
     public TextMeshProUGUI dialogueName;
     public Image char1, char2;
 
-    public Bateau bateau;
     public Image RelatedQuest;
     public float dialogueSpeed;
     
@@ -67,8 +66,10 @@ public class DialogueTrigger : MonoBehaviour
         if (dialogueIndex == 0)
         {
             questionIndex = 0;
+
             bateau.inDialogue = true;
             //skipButton.onClick.
+
             skipButton.onClick.AddListener(() => SkipDialogue());
             Dialogue.SetActive(true);
             dialogueName.text = dialogue[dialogueIndex].dialogueName;
@@ -110,9 +111,13 @@ public class DialogueTrigger : MonoBehaviour
         //End Dialogue
         else if(currentDialogue.lastDialogue == 2)
         {
+
             skipButton.onClick.RemoveAllListeners();
             //skipButton.onClick.RemoveListener(() => SkipDialogue());
             bateau.inDialogue = false;
+
+            skipButton.onClick.RemoveListener(() => SkipDialogue());
+
             RelatedQuest.color = Color.grey;
             a1.onClick.RemoveAllListeners();
             a2.onClick.RemoveAllListeners();

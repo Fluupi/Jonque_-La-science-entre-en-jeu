@@ -10,8 +10,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int energy;
 
     [Header("UI")]
-    [SerializeField] private IntDisplayer scoreDisplayer;
-    [SerializeField] private IntDisplayer energyDisplayer;
+    [SerializeField] private EnergyDisplayer scoreDisplayer;
+    [SerializeField] private EnergyDisplayer energyDisplayer;
 
     [Header("Cheats")]
     [SerializeField] private bool infiniteEnergy;
@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
 
         if (energy > 0)
         {
-            if (Input.GetMouseButtonDown(0) && !bateau.inDialogue)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 player.ResetMovingStraight();
                 player.Kick();  
