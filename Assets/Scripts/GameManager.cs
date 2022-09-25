@@ -8,24 +8,7 @@ public class GameManager : MonoBehaviour
     [Header("Game")]
     [SerializeField] private Bateau player;
     [SerializeField] private LevelEndDisplay levelEndDisplay;
-    [SerializeField] [Range(0,2)] private int appliquerResNum;
-    [SerializeField] private resultat[] res;
-
-    private void Start()
-    {
-        res = new resultat[3];
-        string[] n = { "echo", "coco", "pasGrec" };
-        string[] n2 = {};
-
-        res[0].victoire = true;
-        res[0].noms = n;
-
-        res[1].victoire = false;
-        res[1].noms = n;
-
-        res[2].victoire = false;
-        res[2].noms = n2;
-    }
+    [SerializeField] private DialogueTrigger[] dialogueTriggers;
 
     private void Update()
     {
@@ -39,17 +22,24 @@ public class GameManager : MonoBehaviour
             player.Kick();
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if(Input.GetKeyDown(KeyCode.W))
         {
-            levelEndDisplay.gameObject.SetActive(true);
+            foreach (DialogueTrigger d in dialogueTriggers)
+                d.currentLikability = 2;
 
-            //levelEndDisplay.Display(res[appliquerResNum].victoire, res[appliquerResNum].noms);
+            player.numberOfQuestsDone = 3;
         }
     }
-}
 
-struct resultat
-{
-    public bool victoire;
-    public string[] noms;
+    public void TriggerVoyageDeRtour()
+    {
+        bool quest1 = dialogueTriggers[0].currentLikability >= dialogueTriggers[0].neededLikability;
+        bool quest2 = dialogueTriggers[1].currentLikability >= dialogueTriggers[1].neededLikability;
+        bool quest3 = dialogueTriggers[2].currentLikability >= dialogueTriggers[2].neededLikability;
+
+        bool level = quest1 && quest2 || quest1 && quest3 || quest2 && quest3;
+
+        levelEndDisplay.gameObject.SetActive(true);
+        levelEndDisplay.DisplayResults(level, quest1, quest2, quest3);
+    }
 }

@@ -14,6 +14,7 @@ public class DialogueTrigger : MonoBehaviour
     [Header("Stats")]
     [Space(5)]
     public int currentLikability;
+    public int neededLikability;
     [Space(15)]
     [Header("Question")]
     [Space(5)]
