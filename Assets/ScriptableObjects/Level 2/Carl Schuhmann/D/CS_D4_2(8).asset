@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfSentences: 2
   sentences:
-  - "*L'expression de Minos est ind\xE9chiffrable.*"
-  - "Je vais y r\xE9fl\xE9chir."
+  - "*Carl souffle d'exasp\xE9ration.*"
+  - "Il n'y a que mon argent qui vous int\xE9resse ?"
   char1:
   - {fileID: 21300000, guid: 1fe2a36a3b2a8744abb80ca58947e88c, type: 3}
   - {fileID: 21300000, guid: 1fe2a36a3b2a8744abb80ca58947e88c, type: 3}

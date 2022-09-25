@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfSentences: 2
   sentences:
-  - '*Minos fronce les sourcils.*'
-  - "Cela ne vous regarde pas. \xCAtes vous venu ici pour autre chose ou avons-nous
-    fini ?"
+  - '*L''expression de Carl reste neutre.*'
+  - '*L''expression de Carl reste neutre.*'
   char1:
   - {fileID: 21300000, guid: 1fe2a36a3b2a8744abb80ca58947e88c, type: 3}
   - {fileID: 21300000, guid: 1fe2a36a3b2a8744abb80ca58947e88c, type: 3}

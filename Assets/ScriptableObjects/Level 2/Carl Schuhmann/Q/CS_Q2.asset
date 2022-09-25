@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: CS_Q2
   m_EditorClassIdentifier: 
   answer:
-  - "J\u2019ai vu que votre palais est en ruine : vous avez s\xFBrement besoin d\u2019argent."
-  - "Une grande comp\xE9tition sportive se pr\xE9pare.  Je viens vous inviter."
-  - "Une c\xE9r\xE9monie en l\u2019honneur de Zeus se pr\xE9pare. Je viens vous inviter."
-  karma: ffffffff0000000001000000
+  - Nous cherchons des sportifs et Monsieur de Coubertin m'a dit de venir vous voir.
+  - "Avec tout votre argent, vous devriez bien pouvoir nous aider a financer notre
+    \xE9v\xE8nement !"
+  - "Pour vous inviter, vous et votre \xE9quipe aux nouveaux Jeux olympiques !"
+  karma: 00000000ffffffff01000000
   dialogueIndex: 070000000800000009000000
-  nextQuestionIndex: 050000000400000004000000
+  nextQuestionIndex: 040000000500000004000000

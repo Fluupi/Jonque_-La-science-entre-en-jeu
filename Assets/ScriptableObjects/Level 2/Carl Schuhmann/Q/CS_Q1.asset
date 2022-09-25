@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: CS_Q1
   m_EditorClassIdentifier: 
   answer:
-  - "Une grande comp\xE9tition sportive se pr\xE9pare.  Je viens vous inviter."
-  - "Une c\xE9r\xE9monie en l\u2019honneur de Zeus se pr\xE9pare. Je viens vous inviter."
-  - "J\u2019ai vu que votre palais est en ruine : vous avez s\xFBrement besoin d\u2019argent."
+  - "J'ai toujours r\xEAv\xE9 de vivre \xE0 l'\xE9poque antique, pour le sport, pas
+    vous ?"
+  - "C'est votre club de gymnastique qui m'a parl\xE9 de vous. J'organise une comp\xE9tition
+    en Gr\xE8ce. Vous auriez toutes vos chances !"
+  - Je viens vous inviter aux Jeux olympiques, mais je veux bien un petit cadeau
+    de votre boutique avant.
   karma: 0000000001000000ffffffff
   dialogueIndex: 040000000500000006000000
   nextQuestionIndex: 030000000300000004000000
