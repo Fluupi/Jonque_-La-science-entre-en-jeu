@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: CS_Q0
   m_EditorClassIdentifier: 
   answer:
-  - Je n'y manquerai pas !
-  - "Pos\xE9idon n'est pas mon dieu favori. Je pr\xE9f\xE8re Ath\xE9na."
-  - "Oui, oui, \xE7a ne presse pas, j'ai plus important \xE0 faire."
+  - "Un grand \xE9v\xE8nement va bient\xF4t \xEAtre mis en place, et vous \xEAtes
+    convi\xE9 \xE0 y prendre part."
+  - "Je viens \xE0 votre rencontre pour parler sport, votre Altesse, dont je vous
+    sais friand."
+  - "Je suis envoy\xE9 par Zeus, et non pas par un certains Coubertin, que je ne
+    connais pas."
   karma: 0100000000000000ffffffff
   dialogueIndex: 010000000200000003000000
   nextQuestionIndex: 010000000100000002000000

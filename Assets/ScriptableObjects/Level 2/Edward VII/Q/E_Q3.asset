@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: E_Q3
   m_EditorClassIdentifier: 
   answer:
-  - "Quand vous aurez trouv\xE9 un mari, vous pourrez lui demander."
-  - "Les meilleurs guerriers Grecs se retrouvent aux Jeux olympiques pour se d\xE9fier."
-  - Ce sera l'occasion de faire un beau sacrifice pour Zeus !
-  karma: ffffffff0100000000000000
+  - "Une aide en envoyant une d\xE9l\xE9gation serait un excellent d\xE9but."
+  - "Nous aurons besoin du soutien d'une personne comme vous pour faire rayonner
+    cet \xE9v\xE8nement."
+  - "Nous n'aurons besoin que d'utiliser votre image pour promouvoir l'\xE9v\xE8nement."
+  karma: 0000000001000000ffffffff
   dialogueIndex: 0a0000000b0000000c000000
   nextQuestionIndex: 000000000000000000000000

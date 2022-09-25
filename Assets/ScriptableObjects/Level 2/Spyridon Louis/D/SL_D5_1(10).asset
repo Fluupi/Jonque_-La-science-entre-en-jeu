@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfSentences: 2
   sentences:
-  - "*S\xE9l\xE8ne reste neutre.*\_"
-  - "A la prochaine, beau t\xE9n\xE9breux !"
+  - '*Spyridon reste Neutre.*'
+  - "C'est g\xE9nial ! Je prends mes affaires !"
   char1:
   - {fileID: 21300000, guid: e1b223047a71cd64d9800546fe04583f, type: 3}
   - {fileID: 21300000, guid: e1b223047a71cd64d9800546fe04583f, type: 3}

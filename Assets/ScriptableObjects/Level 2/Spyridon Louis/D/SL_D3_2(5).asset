@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfSentences: 2
   sentences:
-  - "*S\xE9l\xE8ne sourit.*"
-  - "Comme c'est int\xE9ressant. Dites m'en plus."
+  - "*Spyridon fait une t\xEAte \xE9trange.*"
+  - "Je serais ravi de participer ! Je cours tous les jours sur 50 km. \xC7a n'a
+    rien d'extraordinaire, c'est juste qu'il n'y a pas la place sur le chariot pour
+    mon p\xE8re, ses bouteilles et moi !"
   char1:
   - {fileID: 21300000, guid: e1b223047a71cd64d9800546fe04583f, type: 3}
   - {fileID: 21300000, guid: e1b223047a71cd64d9800546fe04583f, type: 3}

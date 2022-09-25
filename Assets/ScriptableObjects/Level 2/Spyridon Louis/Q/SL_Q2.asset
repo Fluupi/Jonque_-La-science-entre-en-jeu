@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: SL_Q2
   m_EditorClassIdentifier: 
   answer:
-  - " Olympie organise un grand \xE9v\xE8nement, et nous voudrions y inviter la plus
-    belle femme du monde."
-  - "Nous pensions inviter la d\xE9esse Aphrodite pour nos jeux, mais nous nous sommes
-    dit que vous feriez l'affaire."
-  - "Une grande comp\xE9tition sportive se pr\xE9pare.  Je viens vous inviter."
-  karma: 01000000ffffffff00000000
+  - "On devrait vous coloniser, \xE7a vous rendrait service."
+  - De bons sportifs, des coureurs par exemple, vous en connaissez ?
+  - "Je cherche de grands sportifs pour nous honorer de leurs pr\xE9sences aux nouveaux
+    jeux olympiques !"
+  karma: ffffffff0000000001000000
   dialogueIndex: 070000000800000009000000
-  nextQuestionIndex: 040000000500000004000000
+  nextQuestionIndex: 040000000400000005000000

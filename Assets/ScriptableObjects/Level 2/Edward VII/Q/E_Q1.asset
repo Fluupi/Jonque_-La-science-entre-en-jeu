@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: E_Q1
   m_EditorClassIdentifier: 
   answer:
-  - Une femme libre comme vous ! Je vous invite aux jeux olympiques. On y fait plein
-    de belles rencontres.
-  - "Vous n'\xEAtes pas mari\xE9e \xE0 votre \xE2ge ! Je devrais plut\xF4t demander
-    \xE0 votre fr\xE8re s'il veut venir aux Jeux olympiques."
-  - "Votre fr\xE8re \xE0 raison de s'inqui\xE9ter pour vous. Vous rencontrerez peut
-    \xEAtre quelqu'un aux jeux olympiques."
-  karma: 01000000ffffffff00000000
+  - "Nous avons pens\xE9 \xE0 plusieurs type d'\xE9preuves, mais nous ne pensons
+    pas mettre en place d'\xE9preuve \xE9questre."
+  - "Nous cherchons \xE0 faire revivre les Jeux Olympiques, avec vous et plusieurs
+    autres pays."
+  - "Il y aura de nombreuses \xE9preuves sportives, comme des \xE9preuves de tir
+    par exemple."
+  karma: ffffffff0000000001000000
   dialogueIndex: 040000000500000006000000
-  nextQuestionIndex: 030000000400000003000000
+  nextQuestionIndex: 040000000300000003000000

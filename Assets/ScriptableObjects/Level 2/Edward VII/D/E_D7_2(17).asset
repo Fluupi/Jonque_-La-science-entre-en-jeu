@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfSentences: 2
   sentences:
-  - "*Cynisca reste neutre.*\_"
-  - "Vous aurez plus de d\xE9tails quand a notre venue ou non bient\xF4t."
+  - "*Edward reste neutre.*\_"
+  - "Je vais m'entretenir avec les personnes concern\xE9es."
   char1:
   - {fileID: 21300000, guid: 9a80d088e5cdec3469f4e4bd0af5f92d, type: 3}
   - {fileID: 21300000, guid: 9a80d088e5cdec3469f4e4bd0af5f92d, type: 3}
   char2:
   - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
   - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
-  dialogueName: Cynisca
+  dialogueName: Edward VII
   lastDialogue: 2

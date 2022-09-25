@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfSentences: 2
   sentences:
-  - '*Cynisca esquisse un sourire*'
-  - "Venez me sauver, mon fr\xE8re se moque de moi parce que je ne suis pas encore
-    mari\xE9e !"
+  - '*Edward fronce les sourcils.*'
+  - "Vous vous trouvez devant le Prince de Galles, futur roi d'Angleterre, parlez,
+    mon temps est pr\xE9cieux."
   char1:
   - {fileID: 21300000, guid: 9a80d088e5cdec3469f4e4bd0af5f92d, type: 3}
   - {fileID: 21300000, guid: 9a80d088e5cdec3469f4e4bd0af5f92d, type: 3}
   char2:
   - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
   - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
-  dialogueName: Cynisca
+  dialogueName: Edward VII
   lastDialogue: 1

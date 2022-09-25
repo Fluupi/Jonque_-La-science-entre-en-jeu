@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: SL_Q1
   m_EditorClassIdentifier: 
   answer:
-  - "Vous devriez construire des logements plut\xF4t que des remparts ! A Olympie
-    vous pourriez voir comment on loge les athl\xE8tes."
-  - "Les hommes les plus beaux de la Gr\xE8ce se retrouvent bient\xF4t \xE0 Olympie.
-    Je viens vous inviter."
-  - "Une grande comp\xE9tition sportive se pr\xE9pare.  Je viens vous inviter."
-  karma: ffffffff0100000000000000
+  - "La Gr\xE8ce est un petit pays\_ arri\xE9r\xE9\_ aujourd'hui, vous savez. Je
+    ne trouverais probablement pas de bon sportif ici."
+  - "\xC7a ne suffit pas pour courir un marathon. Dans la r\xE9gion, y a-t-il de
+    bons coureurs ? J'en cherche."
+  - "J'ai vu que vous courriez \xE0 c\xF4t\xE9 du cheval. Je cherche justement un
+    bon coureur pour participer \xE0 la r\xE9novation des Jeux olympiques !"
+  karma: ffffffff0000000001000000
   dialogueIndex: 040000000500000006000000
-  nextQuestionIndex: 030000000300000004000000
+  nextQuestionIndex: 040000000300000003000000

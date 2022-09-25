@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: SL_Q0
   m_EditorClassIdentifier: 
   answer:
-  - "Vous \xEAtes encore plus belle que la belle H\xE9l\xE8ne."
-  - Je n'ai jamais entendu parler de vous.
-  - "Je pensais que c'\xE9tait la mienne !"
-  karma: 0100000000000000ffffffff
+  - Volontiers, oui !
+  - "Zeus aurait d\xFB r\xE9server le sport aux riches. Tout fout le camp."
+  - J'ai pris une gourde, merci
+  karma: 01000000ffffffff00000000
   dialogueIndex: 010000000200000003000000
-  nextQuestionIndex: 010000000100000002000000
+  nextQuestionIndex: 010000000200000001000000

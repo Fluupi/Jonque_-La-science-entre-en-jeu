@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfSentences: 2
   sentences:
-  - "*S\xE9l\xE8ne se retourne.*"
-  - "C'est cela oui, n'h\xE9sitez pas \xE0 repartir d'o\xF9 vous venez."
+  - '*Spyridon crache juste devant vous avant de partir.*'
+  - Les gens comme vous, ils n'ont pas besoin de mon respect ni de mon attention.
   char1:
   - {fileID: 21300000, guid: e1b223047a71cd64d9800546fe04583f, type: 3}
   - {fileID: 21300000, guid: e1b223047a71cd64d9800546fe04583f, type: 3}

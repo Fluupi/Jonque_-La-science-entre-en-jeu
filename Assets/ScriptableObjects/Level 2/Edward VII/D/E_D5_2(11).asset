@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfSentences: 2
   sentences:
-  - "*Cynisca hoche la t\xEAte favorablement.*"
-  - Que le meilleur gagne !
+  - "*Edward hoche la t\xEAte favorablement.*"
+  - "Qu'il en soit ainsi, je vous enverrai le n\xE9cessaire d\xE8s que possible."
   char1:
   - {fileID: 21300000, guid: 9a80d088e5cdec3469f4e4bd0af5f92d, type: 3}
   - {fileID: 21300000, guid: 9a80d088e5cdec3469f4e4bd0af5f92d, type: 3}
   char2:
   - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
   - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
-  dialogueName: Cynisca
+  dialogueName: Edward VII
   lastDialogue: 2

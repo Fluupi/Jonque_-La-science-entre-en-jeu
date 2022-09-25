@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: E_Q5
   m_EditorClassIdentifier: 
   answer:
-  - "Ce serait plus simple si je m'entretenais avec votre fr\xE8re de toute cette
-    affaire."
-  - "Non, simplement pour vous proposer de participer \xE0 cet hommage aux dieux."
-  - "Utilisez cette rage pour vaincre lors de la comp\xE9tition !"
-  karma: ffffffff0000000001000000
+  - "Participer \xE0 cette comp\xE9tition rendrait le peuple fier de son futur roi."
+  - "Le sport rassemble tout un pays sous un int\xE9r\xEAt commun."
+  - "Des dirigeants de plus grandes nations attendent votre r\xE9ponse."
+  karma: 0100000000000000ffffffff
   dialogueIndex: 100000001100000012000000
   nextQuestionIndex: 000000000000000000000000

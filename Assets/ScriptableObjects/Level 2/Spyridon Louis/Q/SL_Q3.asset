@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: SL_Q3
   m_EditorClassIdentifier: 
   answer:
-  - Ce sera l'occasion de faire un beau sacrifice pour Zeus !
-  - Vos hommes vous aimeront encore plus si vous les envoyez aux Jeux olympiques.
-  - "Vous pourriez m\xEAme participer si vous vous d\xE9guisez en homme !"
+  - Vous pourrez entrer dans l'histoire !
+  - "Vous pourriez gagner de nombreuses r\xE9compenses en participant aux nouveaux
+    Jeux olympiques !"
+  - Je ne sais pas si ce sera suffisant, mais l'important, c'est de participer.
   karma: 0000000001000000ffffffff
   dialogueIndex: 0a0000000b0000000c000000
   nextQuestionIndex: 

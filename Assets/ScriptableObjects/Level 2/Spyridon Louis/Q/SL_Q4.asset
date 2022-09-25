@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: SL_Q4
   m_EditorClassIdentifier: 
   answer:
-  - "Vos hommes seraient galvanis\xE9s par votre pr\xE9sence aux Jeux olympiques."
-  - "Ath\xE9na et H\xE9ra seront s\xFBrement pr\xE9sentes lors de l'\xE9v\xE8nement
-    !"
-  - "Zeus serait probablement honor\xE9 de votre pr\xE9sence."
+  - Participer aux jeux olympiques pourrait vous rapporter gros !
+  - "Le fran\xE7ais Pierre de Coubertin pense que le sport est une tr\xE8s bonne
+    \xE9cole de la vie."
+  - "Vous \xEAtes s\xFBr ? Il ne faudra pas venir pleurer apr\xE8s vous \xEAtre fait
+    ridiculiser."
   karma: 01000000ffffffff00000000
   dialogueIndex: 0d0000000e0000000f000000
-  nextQuestionIndex: 000000000000000000000000
+  nextQuestionIndex: 0100000000000000ffffffff

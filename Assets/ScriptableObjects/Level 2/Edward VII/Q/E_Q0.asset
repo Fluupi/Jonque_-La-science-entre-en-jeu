@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: E_Q0
   m_EditorClassIdentifier: 
   answer:
-  - Merci, on me le dit souvent !
-  - "Et vous \xE7a se voit que vous n'\xEAtes jamais sortie de Sparte."
-  - "J'ai bien fait de venir jusqu'\xE0 Sparte. Je n'ai jamais vu une femme aussi
-    sportive que vous !"
-  karma: 00000000ffffffff01000000
+  - "Un grand \xE9v\xE8nement va bient\xF4t \xEAtre mis en place, et vous \xEAtes
+    convi\xE9 \xE0 y prendre part."
+  - "Je viens \xE0 votre rencontre pour parler sport, votre Altesse, dont je vous
+    sais friand."
+  - "Je suis envoy\xE9 par Zeus, et non pas par un certains Coubertin, que je ne
+    connais pas."
+  karma: 0000000001000000ffffffff
   dialogueIndex: 010000000200000003000000
-  nextQuestionIndex: 010000000200000001000000
+  nextQuestionIndex: 010000000100000002000000

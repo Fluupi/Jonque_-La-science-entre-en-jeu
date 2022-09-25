@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: SL_Q5
   m_EditorClassIdentifier: 
   answer:
-  - "Vous devriez vous sentir honor\xE9e d'\xEAtre invit\xE9 \xE0 un tel \xE9v\xE8nement."
-  - "Zeus serait probablement honor\xE9 de votre pr\xE9sence."
-  - Les sportifs de votre peuple seraient heureux de vous voir les encourager lors
-    des jeux.
+  - "Parce que vous comprenez ma langue ? Vous \xEAtes plus civilis\xE9 que pr\xE9vu."
+  - "Vous courrez cependant bien et vite, \xE7a pourrait vous \xEAtre utile pendant
+    la comp\xE9tition."
+  - "Veuillez m'excusez. J'ai remarqu\xE9 que vous \xE9tiez sportif, vous pourriez
+    participer aux jeux olympiques !"
   karma: ffffffff0000000001000000
   dialogueIndex: 100000001100000012000000
-  nextQuestionIndex: 000000000000000000000000
+  nextQuestionIndex: ffffffff0000000001000000

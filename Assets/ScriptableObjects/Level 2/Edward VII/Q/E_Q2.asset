@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: E_Q2
   m_EditorClassIdentifier: 
   answer:
-  - Afin de rendre hommage aux dieux en leur montrant un beau spectacle.
-  - "Pour vous confronter aux meilleurs parmi les meilleurs et prouver votre valeur,
-    bien s\xFBr."
-  - "Rien ne vous dit que vous puissiez sortir vainqueur de jeux de cette ampleur,
-    ma ch\xE8re."
-  karma: 0000000001000000ffffffff
+  - "Une c\xE9r\xE9monie en l\u2019honneur du sport des plus grands pays va s'organiser."
+  - "Nous venons vous  demander votre aide pour la r\xE9novation des jeux olympiques."
+  - "Votre pays est tr\xE8s riche, il pourrait nous \xEAtre tr\xE8s utile pour l'organisation
+    de la comp\xE9tition."
+  karma: 0100000000000000ffffffff
   dialogueIndex: 070000000800000009000000
   nextQuestionIndex: 040000000400000005000000

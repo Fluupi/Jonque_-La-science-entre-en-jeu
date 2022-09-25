@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfSentences: 2
   sentences:
-  - "*S\xE9l\xE8ne grimace.*"
-  - "Je vais prendre le temps de la r\xE9flexion et je vous enverrai un messager."
+  - "*Spyridon reste neutre.*\_"
+  - "Je vais y r\xE9fl\xE9chir, on se retrouve peut \xEAtre la bas !"
   char1:
   - {fileID: 21300000, guid: e1b223047a71cd64d9800546fe04583f, type: 3}
   - {fileID: 21300000, guid: e1b223047a71cd64d9800546fe04583f, type: 3}

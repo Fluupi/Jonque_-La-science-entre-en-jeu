@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfSentences: 2
   sentences:
-  - "*S\xE9l\xE8ne souffle.*"
-  - "Vous \xEAtes un pi\xE8tre humoriste. Mais je vais r\xE9fl\xE9chir \xE0 votre
-    proposition."
+  - '*Spyridon grogne*'
+  - Si je viens, ce sera pour gagner, mon bon monsieur.
   char1:
   - {fileID: 21300000, guid: e1b223047a71cd64d9800546fe04583f, type: 3}
   - {fileID: 21300000, guid: e1b223047a71cd64d9800546fe04583f, type: 3}
