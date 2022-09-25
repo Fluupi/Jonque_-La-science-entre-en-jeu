@@ -22,5 +22,5 @@ MonoBehaviour:
   char2:
   - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
   - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
-  dialogueName: Selene
+  dialogueName: "Spyridon Lo\xFAis"
   lastDialogue: 2
