@@ -484,10 +484,10 @@ MonoBehaviour:
     EventKeyPressed:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
+        - m_Target: {fileID: 965281880}
+          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+          m_MethodName: TriggerVoyageDeRtour
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2054,6 +2054,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1499998459}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: neededLikability
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: currentLikability
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.size
       value: 19
       objectReference: {fileID: 0}
@@ -2296,6 +2304,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8755903582004210571, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
   m_PrefabInstance: {fileID: 520723742}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &520723744 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+  m_PrefabInstance: {fileID: 520723742}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e82d82da9d8cf04b8261c15162568ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &550811237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2831,7 +2850,7 @@ Transform:
   - {fileID: 1624477861}
   - {fileID: 1611683968}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &855374321
 GameObject:
@@ -3262,8 +3281,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1014919475}
-  levelEndDisplay: {fileID: 1683247558}
-  appliquerResNum: 0
+  levelEndDisplay: {fileID: 1983718575}
+  dialogueTriggers:
+  - {fileID: 8755903582379830595}
+  - {fileID: 1332445892}
+  - {fileID: 520723744}
   commentaryFrequence: 10
 --- !u!4 &965281881
 Transform:
@@ -4360,6 +4382,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1499998459}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: neededLikability
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: currentLikability
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.size
       value: 19
       objectReference: {fileID: 0}
@@ -4597,6 +4627,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+--- !u!114 &1332445892 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+  m_PrefabInstance: {fileID: 1332445891}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e82d82da9d8cf04b8261c15162568ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1335202161
 GameObject:
   m_ObjectHideFlags: 0
@@ -6753,17 +6794,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653806207}
   m_CullTransparentMesh: 1
---- !u!114 &1683247558 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1137254465587382789, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
-  m_PrefabInstance: {fileID: 1983718573}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2d9c26cd90b7c042bbe934bd6206f71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1700626181 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8755903582004210571, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
@@ -7789,13 +7819,66 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3228641627165382232, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: detailText
+      value: "S\xE9l\xE8ne n'a pas r\xE9ellement exist\xE9, mais le mythe d'H\xE9l\xE8ne
+        est bien connu. Nous avons imagin\xE9 qu'une descendante d'H\xE9l\xE8ne serait
+        rest\xE9e \xE0 Troie. Dans la mythologie, P\xE2ris, un prince Troyen, dut
+        choisir \xE0 qui donner la \"pomme de la discorde\" entre trois d\xE9esses,
+        H\xE9ra, Ath\xE9na et Aphrodite. P\xE2ris choisit Aphrodite, qui lui promettait
+        \"d'\xE9pouser la femme la plus belle du monde\" qui \xE9tait H\xE9l\xE8ne
+        ! Cela posa probl\xE8me car elle \xE9tait mari\xE9e \xE0 M\xE9n\xE9las, le
+        roi de Sparte, ce qui engendrera plus tard la fameuse guerre de Troie..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619528265830390624, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038300214997967, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: detailText
+      value: "Minos \xE9tait un roi l\xE9gendaire de Cr\xE8te dans la mythologie,
+        et est a l'origine du mythe du Minotaure et du labyrinthe. Il pria Pos\xE9idon
+        de faire apparaitre un magnifique taureau blanc hors de l'eau, pour le lui
+        sacrifier en son honneur, mais se pris d'affection pour l'animal et refusa
+        de le tuer. Pos\xE9idon, furieux, rendit la femme de Minos, Pasipha\xE9,
+        \xE9prise du taureau blanc. Elle demanda \xE0 l'architecte D\xE9dale de leur
+        construire un labyrinthe ou ils purent s'accoupler, ce qui donna naissance
+        au tr\xE8s connu Minotaure."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038300518238310, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_fontSize
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038300518238310, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: dbd9e4379f210994abfbe89d8be1cb05, type: 2}
+    - target: {fileID: 4464038300518238310, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038300518238310, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
 --- !u!224 &1983718574 stripped
 RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1137254465587382790, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3619528265830390624, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
   m_PrefabInstance: {fileID: 1983718573}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1983718575 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3619528265830390627, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+  m_PrefabInstance: {fileID: 1983718573}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2d9c26cd90b7c042bbe934bd6206f71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1990984999
 GameObject:
   m_ObjectHideFlags: 0
@@ -7819,7 +7902,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990984999}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.36627764, y: 0.7031565, z: -0.6760769}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7828,7 +7911,7 @@ Transform:
   - {fileID: 1139027805}
   - {fileID: 465059299}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1996093395 stripped
 Transform:
@@ -8279,6 +8362,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1499998459}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: neededLikability
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: currentLikability
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.size
       value: 19
       objectReference: {fileID: 0}
@@ -8532,6 +8623,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+--- !u!114 &8755903582379830595 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+  m_PrefabInstance: {fileID: 8755903582379830594}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e82d82da9d8cf04b8261c15162568ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8755903582619502135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8871460675623990969, guid: f0f7d02d60a4eb24e9e5690b2154c6fa, type: 3}
