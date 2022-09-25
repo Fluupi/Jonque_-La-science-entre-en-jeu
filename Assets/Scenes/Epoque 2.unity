@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 117673260}
   - component: {fileID: 117673261}
   m_Layer: 0
-  m_Name: Olympie
+  m_Name: Athene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1855,7 +1855,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35.7584, y: -0.69996643}
+  m_AnchoredPosition: {x: 35.7584, y: -5.4}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &264060517
@@ -1878,7 +1878,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Aller parler \xE0 Cynisca \xE0  Sparte\n"
+  m_text: "Aller parler \xE0 Spyridon Louis en Gr\xE8ce\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dbd9e4379f210994abfbe89d8be1cb05, type: 2}
   m_sharedMaterial: {fileID: 4062831421216897354, guid: dbd9e4379f210994abfbe89d8be1cb05, type: 2}
@@ -1905,8 +1905,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1941,7 +1941,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -7.9334717, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4103,7 +4103,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Retournez a Olympie!
+  m_text: Retournez a Athene
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 79fafc73f53a31c41b10ed667642e461, type: 2}
   m_sharedMaterial: {fileID: 6935712294732167724, guid: 79fafc73f53a31c41b10ed667642e461, type: 2}
@@ -4934,7 +4934,19 @@ MonoBehaviour:
   - key: 101
     EventKeyPressed:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1851434164}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
 --- !u!212 &1074537629
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6477,7 +6489,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 40.458397, y: 1}
+  m_AnchoredPosition: {x: 40.458397, y: -5.2}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1442221991
@@ -6500,7 +6512,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Aller parler \xE0 S\xE9l\xE8ne \xE0 Troie.\n"
+  m_text: "Aller parler \xE0 Edward VII en Angleterre\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dbd9e4379f210994abfbe89d8be1cb05, type: 2}
   m_sharedMaterial: {fileID: 4062831421216897354, guid: dbd9e4379f210994abfbe89d8be1cb05, type: 2}
@@ -6527,8 +6539,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6909,7 +6921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 42.3584, y: 0}
+  m_AnchoredPosition: {x: 42.3584, y: -4.5}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1576361666
@@ -6932,7 +6944,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Aller parler \xE0 Minos en Cr\xE8te\t"
+  m_text: "Aller parler \xE0 Carl Schuhmann \xE0 Berlin\t"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dbd9e4379f210994abfbe89d8be1cb05, type: 2}
   m_sharedMaterial: {fileID: 4062831421216897354, guid: dbd9e4379f210994abfbe89d8be1cb05, type: 2}
@@ -6959,8 +6971,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7139,6 +7151,7 @@ RectTransform:
   - {fileID: 602718815}
   - {fileID: 4335757}
   - {fileID: 122030014}
+  - {fileID: 1851434165}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7589,6 +7602,117 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1001 &1851434163
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1703447832}
+    m_Modifications:
+    - target: {fileID: 790916719246361842, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_Name
+      value: LevelEndDisplayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361842, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1200
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+--- !u!1 &1851434164 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 790916719246361842, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+  m_PrefabInstance: {fileID: 1851434163}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1851434165 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 790916719246361843, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+  m_PrefabInstance: {fileID: 1851434163}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1869531848
 GameObject:
   m_ObjectHideFlags: 0
