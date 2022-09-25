@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Sneakysunset 1.unity
+    path: Assets/Scenes/Epoque 1.unity
     guid: 776fdec3aa124854cb06843f716836bc
   - enabled: 0
     path: Assets/Scenes/Menu.unity
