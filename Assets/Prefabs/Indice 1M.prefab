@@ -550,7 +550,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8871460675623990969}
-  - component: {fileID: 8871460675623990968}
   m_Layer: 0
   m_Name: Indice 1M
   m_TagString: Untagged
@@ -565,7 +564,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8871460675623990967}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.666278, y: -9.713157, z: 0.6760769}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -576,36 +575,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8871460675623990968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8871460675623990967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e82d82da9d8cf04b8261c15162568ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentLikability: 2
-  question: []
-  questionIndex: 0
-  dialogue:
-  - {fileID: 11400000, guid: c6f569bd484bc5a489317f9e2e2773f4, type: 2}
-  Answer: {fileID: 0}
-  answer1: {fileID: 0}
-  answer2: {fileID: 0}
-  answer3: {fileID: 0}
-  a1: {fileID: 0}
-  a2: {fileID: 0}
-  a3: {fileID: 0}
-  Dialogue: {fileID: 0}
-  skipButton: {fileID: 0}
-  dialogueText: {fileID: 0}
-  dialogueName: {fileID: 0}
-  char1: {fileID: 0}
-  char2: {fileID: 0}
-  RelatedQuest: {fileID: 0}
-  dialogueSpeed: 0.02
-  bateau: {fileID: 0}

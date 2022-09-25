@@ -8,6 +8,7 @@ public struct KeyEvent
 {
     public KeyCode key;
     public UnityEvent EventKeyPressed;
+
     //public UnityEvent EventKeyReleased;
 }
 

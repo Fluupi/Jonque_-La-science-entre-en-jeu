@@ -1,12 +1,14 @@
 using System;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class Bateau : MonoBehaviour
 {
     public bool enDialogue;
-
+    public UnityEvent endQuestEvent;
     //Components
     private Rigidbody2D rb;
+
+    public int numberOfQuestsDone;
 
     //Kick
     [Header("Kick")]
@@ -45,6 +47,11 @@ public class Bateau : MonoBehaviour
 
     private void Update()
     {
+        if(numberOfQuestsDone >= 3)
+        {
+            endQuestEvent?.Invoke();
+        }
+
         if (enDialogue)
         {
             kickLeftTime = 0f;
