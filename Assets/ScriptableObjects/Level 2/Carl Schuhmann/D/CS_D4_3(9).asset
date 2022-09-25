@@ -21,7 +21,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1fe2a36a3b2a8744abb80ca58947e88c, type: 3}
   - {fileID: 21300000, guid: 1fe2a36a3b2a8744abb80ca58947e88c, type: 3}
   char2:
-  - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
-  - {fileID: 21300000, guid: 3244b154cb7557f4084c4ef23a1845ed, type: 3}
+  - {fileID: 21300000, guid: f3c633e2250844f40a2872822d43e93c, type: 3}
+  - {fileID: 21300000, guid: f3c633e2250844f40a2872822d43e93c, type: 3}
   dialogueName: Carl Schuhmann
   lastDialogue: 1
