@@ -19,5 +19,5 @@ MonoBehaviour:
   - {fileID: 21300000, guid: bf5f57b47293d114bb56ad8bb7904141, type: 3}
   char2:
   - {fileID: 21300000, guid: f3c633e2250844f40a2872822d43e93c, type: 3}
-  dialogueName: "Spyridon Lo\xFAis"
+  dialogueName: Spyridon Louis
   lastDialogue: 0

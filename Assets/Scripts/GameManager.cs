@@ -10,24 +10,30 @@ public class GameManager : MonoBehaviour
     [SerializeField] private LevelEndDisplay levelEndDisplay;
     [SerializeField] private DialogueTrigger[] dialogueTriggers;
 
+    float timer = 0;
+    public float commentaryFrequence;
+
     private void Update()
     {
+        timer += Time.deltaTime;
+
         if (Input.GetKeyDown(KeyCode.Space) && !player.enDialogue)
         {
-            if(Random.Range(0,1) > .5f)
+            float rd = Random.Range(0, 1);
+            if (rd > .5f)
             {
                 FMODUnity.RuntimeManager.PlayOneShot("event:/Ship_Movement");
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Commentary/Nelson/Rotation");
             }
+            timer = 0;
 
             player.Kick();
         }
 
-        if(Input.GetKeyDown(KeyCode.W))
+        if (timer > commentaryFrequence)
         {
-            foreach (DialogueTrigger d in dialogueTriggers)
-                d.currentLikability = 2;
-
-            player.numberOfQuestsDone = 3;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Commentary/Nelson/Nothing_To_Say");
+            timer = -5;
         }
     }
 

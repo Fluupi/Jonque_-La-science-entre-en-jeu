@@ -18,8 +18,8 @@ MonoBehaviour:
   - "Vous vous trouvez devant le Prince de Galles, futur roi d'Angleterre, parlez,
     mon temps est pr\xE9cieux."
   char1:
-  - {fileID: 21300000, guid: 9a80d088e5cdec3469f4e4bd0af5f92d, type: 3}
-  - {fileID: 21300000, guid: 9a80d088e5cdec3469f4e4bd0af5f92d, type: 3}
+  - {fileID: 21300000, guid: 20f90815ce7436d46a3efd66d4839fe4, type: 3}
+  - {fileID: 21300000, guid: 20f90815ce7436d46a3efd66d4839fe4, type: 3}
   char2:
   - {fileID: 21300000, guid: f3c633e2250844f40a2872822d43e93c, type: 3}
   - {fileID: 21300000, guid: f3c633e2250844f40a2872822d43e93c, type: 3}
