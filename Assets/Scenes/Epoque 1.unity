@@ -8288,6 +8288,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1877892777}
     m_Modifications:
+    - target: {fileID: 3228641627165382232, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: detailText
+      value: "S\xE9l\xE8ne n'a pas r\xE9ellement exist\xE9, mais le mythe d'H\xE9l\xE8ne
+        est bien connu. Dans la mythologie, Paris, un prince Troyen, dut choisir
+        \xE0 qui donner la \"pomme de la discorde\" entre les trois d\xE9esses, H\xE9ra,
+        Ath\xE9na et Aphrodite. Paris choisit Aphrodite, qui lui promettait \"d'\xE9pouser
+        la femme la plus belle du monde\" qui \xE9tait H\xE9l\xE8ne ! Cela posa probl\xE8me
+        car elle \xE9tait mari\xE9e \xE0 M\xE9n\xE9las, le roi de Sparte, ce qui
+        engendrera plus tard la fameuse guerre de Troie,"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228641628219383973, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: detailText
+      value: "Cynisca de Sparte a r\xE9ellement exist\xE9. Elle est rest\xE9e dans
+        l'histoire comme la premi\xE8re femme \xE0 avoir gagn\xE9 une \xE9preuve
+        des Jeux olympiques en -396 et -392 ... alors que la pr\xE9sence des femmes
+        y \xE9tait interdite ! La solution qu'elle a trouv\xE9e est de gagner la
+        course de char, puisque c'est le propri\xE9taire du char qui obtient la victoire
+        et non le pilote. Le pilote \xE9tait un homme, pr\xE9sent dans le stade.
+        Mais Cynisca \xE9tait la propri\xE9taire du char et c'est donc elle qui a
+        gagn\xE9."
+      objectReference: {fileID: 0}
     - target: {fileID: 3619528265830390624, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
