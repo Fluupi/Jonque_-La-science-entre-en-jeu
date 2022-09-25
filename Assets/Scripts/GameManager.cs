@@ -47,7 +47,8 @@ public class GameManager : MonoBehaviour
 
         if(timer > commentaryFrequence)
         {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Commentary/Nelson/Nothing_To_Say");
+            if(!player.enDialogue)
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Commentary/Nelson/Nothing_To_Say");
             timer = -5;
         }
 

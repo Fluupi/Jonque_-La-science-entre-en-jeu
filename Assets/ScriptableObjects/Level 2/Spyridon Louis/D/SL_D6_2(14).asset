@@ -15,7 +15,7 @@ MonoBehaviour:
   numOfSentences: 2
   sentences:
   - "*Spyridon reste neutre.*\_"
-  - "Je vais y r\xE9fl\xE9chir, on se retrouve peut \xEAtre la bas !"
+  - "Je vais y r\xE9fl\xE9chir, on se retrouve peut \xEAtre l\xE0-bas !"
   char1:
   - {fileID: 21300000, guid: bf5f57b47293d114bb56ad8bb7904141, type: 3}
   - {fileID: 21300000, guid: bf5f57b47293d114bb56ad8bb7904141, type: 3}

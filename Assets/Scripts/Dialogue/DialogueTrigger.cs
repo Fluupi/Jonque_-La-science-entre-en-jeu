@@ -140,7 +140,7 @@ public class DialogueTrigger : MonoBehaviour
         //End Dialogue
         else if(currentDialogue.lastDialogue == 2)
         {
-            FMODUnity.RuntimeManager.PlayOneShot("event:/Music/Music_Jingle_Vitory");
+            //FMODUnity.RuntimeManager.PlayOneShot("event:/Music/Music_Jingle_Vitory");
             disactivateZoneEvent?.Invoke();
             endDialogueEventFade?.Invoke(.6f, 0f, false);
             endDialogueEventPop?.Invoke(Vector2.zero, new Vector2(0, -950f), true) ;

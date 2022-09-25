@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311554, g: 0.38073874, b: 0.3587339, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -239,13 +239,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32291729}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0, y: -0.258819, z: 0, w: 0.9659259}
   m_LocalPosition: {x: 2.070646, y: 4.138982, z: 0.3217244}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1829210912}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
 --- !u!1 &40417186
 GameObject:
   m_ObjectHideFlags: 0
@@ -3469,15 +3469,15 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: db1770b3a28b30a4c8ffb754fcada660, type: 3}
     - target: {fileID: 3996120833323409558, guid: 1c24269a7b1edcc448079f43392e80ea, type: 3}
       propertyPath: m_Color.b
-      value: 0.5566038
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3996120833323409558, guid: 1c24269a7b1edcc448079f43392e80ea, type: 3}
       propertyPath: m_Color.g
-      value: 0.5566038
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3996120833323409558, guid: 1c24269a7b1edcc448079f43392e80ea, type: 3}
       propertyPath: m_Color.r
-      value: 0.5566038
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3996120833323409558, guid: 1c24269a7b1edcc448079f43392e80ea, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -6991,7 +6991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6376179960153269236, guid: 900075aa1ec75914db3316a1d06cf5f2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6376179960153269238, guid: 900075aa1ec75914db3316a1d06cf5f2, type: 3}
       propertyPath: endTutoEvent.m_PersistentCalls.m_Calls.Array.size
