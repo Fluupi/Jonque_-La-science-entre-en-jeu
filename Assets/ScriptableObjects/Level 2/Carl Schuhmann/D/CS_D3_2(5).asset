@@ -14,9 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfSentences: 2
   sentences:
-  - '*Minos sourit.*'
-  - "Voil\xE0 une proposition des plus int\xE9ressantes. Au nom de Zeus, je suis
-    tout ou\xEFe."
+  - "*Carl se penche, int\xE9ress\xE9*"
+  - "Les Allemands croient que la gymnastique\_ n'est pas du sport."
   char1:
   - {fileID: 21300000, guid: 1fe2a36a3b2a8744abb80ca58947e88c, type: 3}
   - {fileID: 21300000, guid: 1fe2a36a3b2a8744abb80ca58947e88c, type: 3}

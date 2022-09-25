@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: CS_Q4
   m_EditorClassIdentifier: 
   answer:
-  - "Participer \xE0 cette c\xE9r\xE9monie plaira surement \xE0 Zeus, j'en suis certain."
-  - Les guerriers de votre peuple seront ravis de participer.
-  - "Vous \xEAtes s\xFBr que vous n'avez pas besoin d'argent ?"
-  karma: 0100000000000000ffffffff
+  - "La gloire vous attend, vous et votre \xE9quipe, Carl ! Montrez ce dont vous
+    \xEAtes capable."
+  - "Si vous ne pouvez pas laisser quelques cailloux derri\xE8re, mieux vaut ne pas
+    venir."
+  - "Vous pouvez laisser la boutique \xE0 un amis en attendant ? Le sport n'attend
+    pas, Carl."
+  karma: 01000000ffffffff00000000
   dialogueIndex: 0d0000000e0000000f000000
   nextQuestionIndex: 000000000000000000000000

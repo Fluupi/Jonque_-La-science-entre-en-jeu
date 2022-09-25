@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: CS_Q3
   m_EditorClassIdentifier: 
   answer:
-  - "De grandes r\xE9compenses attendent les vainqueurs."
-  - Le grand Zeus sera content de nous.
-  - "Le sport est tr\xE8s important pour la sant\xE9."
+  - C'est vrai, la gymnastique c'est un peu comme la danse.
+  - "La gymnastique\_ a toute sa place dans les \xE9preuves olympiques et vous pourriez
+    remporter beaucoup d'or !"
+  - "Ils ne croient m\xEAme plus \xE0 Zeus, c'est pour dire !"
   karma: ffffffff0100000000000000
   dialogueIndex: 0a0000000b0000000c000000
   nextQuestionIndex: 000000000000000000000000

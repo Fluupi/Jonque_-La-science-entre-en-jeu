@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numOfSentences: 2
   sentences:
-  - '*Minos souffle.*'
-  - "Ce n'est pas le plus important, mais je vais \xE9tudier votre proposition."
+  - '*Carl grogne*'
+  - "Ah ah, tr\xE8s amusant, mais \xE7a reste du sport. Je vais regarder \xE7a."
   char1:
   - {fileID: 21300000, guid: 1fe2a36a3b2a8744abb80ca58947e88c, type: 3}
   - {fileID: 21300000, guid: 1fe2a36a3b2a8744abb80ca58947e88c, type: 3}

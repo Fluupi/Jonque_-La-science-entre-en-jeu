@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: CS_Q5
   m_EditorClassIdentifier: 
   answer:
-  - "Le sport est tr\xE8s important pour la sant\xE9."
-  - "De grandes r\xE9compenses attendent les vainqueurs."
-  - "Participer \xE0 cette comp\xE9tition pourrait vous attirer les faveurs du grand
-    Zeus."
-  karma: 00000000ffffffff01000000
+  - "Principalement, quand m\xEAme. Mais je comprend, vous les Allemands, vous ne
+    pensez qu'\xE0 vos \xE9conomies."
+  - "Non, pas seulement, pour vos comp\xE9tences aussi. Mais les deux font la paire."
+  - "Non, bien s\xFBr, je viens ici avant tout pour vos comp\xE9tences en tant que
+    gymnaste."
+  karma: ffffffff0000000001000000
   dialogueIndex: 100000001100000012000000
   nextQuestionIndex: 000000000000000000000000
