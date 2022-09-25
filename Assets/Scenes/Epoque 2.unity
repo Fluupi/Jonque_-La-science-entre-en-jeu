@@ -5824,6 +5824,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1233764158}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: neededLikability
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.size
       value: 19
       objectReference: {fileID: 0}
@@ -6313,6 +6317,14 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 1233764158}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: neededLikability
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: currentLikability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.size
       value: 19
@@ -10235,6 +10247,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1061392004 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+  m_PrefabInstance: {fileID: 174611905}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e82d82da9d8cf04b8261c15162568ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1074537626
 GameObject:
   m_ObjectHideFlags: 0
@@ -10719,6 +10742,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166981815}
   m_CullTransparentMesh: 1
+--- !u!114 &1168312868 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+  m_PrefabInstance: {fileID: 1203121126}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e82d82da9d8cf04b8261c15162568ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1168806739
 GameObject:
   m_ObjectHideFlags: 0
@@ -10889,6 +10923,14 @@ PrefabInstance:
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 1233764158}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: neededLikability
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+      propertyPath: currentLikability
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.size
       value: 19
@@ -11323,8 +11365,8 @@ MonoBehaviour:
   levelEndDisplay: {fileID: 1851434165}
   dialogueTriggers:
   - {fileID: 257860700}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1061392004}
+  - {fileID: 1168312868}
   commentaryFrequence: 10
 --- !u!1 &1233764156
 GameObject:
@@ -13232,6 +13274,10 @@ PrefabInstance:
       propertyPath: charLoseText
       value: "Carl n'a pas accept\xE9 de rejoindre vos Jeux Olympiques"
       objectReference: {fileID: 0}
+    - target: {fileID: 3619528265830390624, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4464038299236020569, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -13251,7 +13297,7 @@ PrefabInstance:
     - target: {fileID: 4464038299730135699, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 78ba7266e099de84fb597a1e6f16c791, type: 3}
+      objectReference: {fileID: 21300000, guid: 20f90815ce7436d46a3efd66d4839fe4, type: 3}
     - target: {fileID: 4464038299735660362, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
       propertyPath: m_text
       value: Edward VII
@@ -13277,6 +13323,14 @@ PrefabInstance:
     - target: {fileID: 4464038300214997967, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
       propertyPath: charLoseText
       value: "Edward n'a pas accept\xE9 de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038300518238310, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: dbd9e4379f210994abfbe89d8be1cb05, type: 2}
+    - target: {fileID: 4464038300518238310, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
@@ -13442,6 +13496,14 @@ PrefabInstance:
       propertyPath: endQuestEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 602718814}
+    - target: {fileID: 5490825552783979664, guid: 0baa31acee3026b43bea53cc72af6267, type: 3}
+      propertyPath: endQuestEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 170137507}
+    - target: {fileID: 5490825552783979664, guid: 0baa31acee3026b43bea53cc72af6267, type: 3}
+      propertyPath: endQuestEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     - target: {fileID: 5490825552783979666, guid: 0baa31acee3026b43bea53cc72af6267, type: 3}
       propertyPath: m_RootOrder
       value: 1
