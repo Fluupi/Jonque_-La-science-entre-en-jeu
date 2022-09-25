@@ -26,7 +26,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3619528265830390625}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -378,7 +378,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -395,8 +395,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -581,6 +581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4464038300675074530}
   - component: {fileID: 4464038300675074529}
+  - component: {fileID: 1117428779}
   m_Layer: 5
   m_Name: Details Perso
   m_TagString: Untagged
@@ -618,6 +619,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4464038300675074531}
   m_CullTransparentMesh: 1
+--- !u!114 &1117428779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4464038300675074531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &4464038300747405430
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,6 +920,14 @@ PrefabInstance:
       propertyPath: display
       value: 
       objectReference: {fileID: 3619528265830390627}
+    - target: {fileID: 1242152759550326598, guid: bcdf328637338354bb30891670083c85, type: 3}
+      propertyPath: charWinText
+      value: "Minos a accept\xE9 de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1242152759550326598, guid: bcdf328637338354bb30891670083c85, type: 3}
+      propertyPath: charLoseText
+      value: "Minos n'a pas accept\xE9 de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcdf328637338354bb30891670083c85, type: 3}
 --- !u!114 &4464038300214997967 stripped
@@ -1006,6 +1045,14 @@ PrefabInstance:
       propertyPath: display
       value: 
       objectReference: {fileID: 3619528265830390627}
+    - target: {fileID: 1242152759550326598, guid: bcdf328637338354bb30891670083c85, type: 3}
+      propertyPath: charWinText
+      value: "S\xE9l\xE8ne a accept\xE9 de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1242152759550326598, guid: bcdf328637338354bb30891670083c85, type: 3}
+      propertyPath: charLoseText
+      value: "S\xE9l\xE8ne n'a pas accept\xE9 de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
     - target: {fileID: 1242152759550326599, guid: bcdf328637338354bb30891670083c85, type: 3}
       propertyPath: m_Type
       value: 0
@@ -1147,6 +1194,25 @@ PrefabInstance:
       propertyPath: display
       value: 
       objectReference: {fileID: 3619528265830390627}
+    - target: {fileID: 1242152759550326598, guid: bcdf328637338354bb30891670083c85, type: 3}
+      propertyPath: detailText
+      value: "Cynisca de Sparte a r\xE9ellement exist\xE9. Elle est rest\xE9e dans
+        l'histoire comme la premi\xE8re femme \xE0 avoir gagn\xE9 une \xE9preuve
+        des Jeux olympiques en -396 et -392 ... alors que la pr\xE9sence des femmes
+        y \xE9taient interdite ! La solution qu'elle a trouv\xE9e est de gagner la
+        course de char, puisque c'est le propri\xE9taire du char qui obtient la victoire
+        et non le pilote. Le pilote \xE9tait un homme, pr\xE9sent dans le stade.
+        Mais Cynisca \xE9tait la propri\xE9taire du char et c'est donc elle qui a
+        gagn\xE9."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1242152759550326598, guid: bcdf328637338354bb30891670083c85, type: 3}
+      propertyPath: charWinText
+      value: "Cynisca a accept\xE9 de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1242152759550326598, guid: bcdf328637338354bb30891670083c85, type: 3}
+      propertyPath: charLoseText
+      value: "Cynisca n'a pas accept\xE9 de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
     - target: {fileID: 1242152760102785987, guid: bcdf328637338354bb30891670083c85, type: 3}
       propertyPath: m_text
       value: 'Cynisca
