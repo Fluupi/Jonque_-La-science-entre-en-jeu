@@ -480,6 +480,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e82d82da9d8cf04b8261c15162568ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  endDialogueEventFade:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEventPop:
+    m_PersistentCalls:
+      m_Calls: []
+  endQuestionEventPop:
+    m_PersistentCalls:
+      m_Calls: []
+  disactivateZoneEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 424822724}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 196631934}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7310595077685253118}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currentLikability: 2
   question:
   - {fileID: 11400000, guid: 7278ed289c4a55249bb2fb7a373c4a1e, type: 2}
