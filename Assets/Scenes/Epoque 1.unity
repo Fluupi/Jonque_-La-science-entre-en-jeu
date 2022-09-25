@@ -8291,12 +8291,13 @@ PrefabInstance:
     - target: {fileID: 3228641627165382232, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
       propertyPath: detailText
       value: "S\xE9l\xE8ne n'a pas r\xE9ellement exist\xE9, mais le mythe d'H\xE9l\xE8ne
-        est bien connu. Dans la mythologie, Paris, un prince Troyen, dut choisir
-        \xE0 qui donner la \"pomme de la discorde\" entre les trois d\xE9esses, H\xE9ra,
-        Ath\xE9na et Aphrodite. Paris choisit Aphrodite, qui lui promettait \"d'\xE9pouser
-        la femme la plus belle du monde\" qui \xE9tait H\xE9l\xE8ne ! Cela posa probl\xE8me
-        car elle \xE9tait mari\xE9e \xE0 M\xE9n\xE9las, le roi de Sparte, ce qui
-        engendrera plus tard la fameuse guerre de Troie,"
+        est bien connu. Nous avons imagin\xE9 qu'une descendante d'H\xE9l\xE8ne serait
+        rest\xE9e \xE0 Troie. Dans la mythologie, P\xE2ris, un prince Troyen, dut
+        choisir \xE0 qui donner la \"pomme de la discorde\" entre trois d\xE9esses,
+        H\xE9ra, Ath\xE9na et Aphrodite. P\xE2ris choisit Aphrodite, qui lui promettait
+        \"d'\xE9pouser la femme la plus belle du monde\" qui \xE9tait H\xE9l\xE8ne
+        ! Cela posa probl\xE8me car elle \xE9tait mari\xE9e \xE0 M\xE9n\xE9las, le
+        roi de Sparte, ce qui engendrera plus tard la fameuse guerre de Troie..."
       objectReference: {fileID: 0}
     - target: {fileID: 3228641628219383973, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
       propertyPath: detailText
@@ -8396,6 +8397,17 @@ PrefabInstance:
     - target: {fileID: 3619528265830390625, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
       propertyPath: m_Name
       value: LevelEndDisplayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038300214997967, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: detailText
+      value: "Minos \xE9tait un roi l\xE9gendaire de Cr\xE8te dans la mythologie,
+        et est a l'origine du mythe du Minotaure et du labyrinthe. Il pria Pos\xE9idon
+        de faire apparaitre un magnifique taureau blanc hors de l'eau, pour le lui
+        sacrifier en son honneur, mais se pris d'affection pour l'animal et refusa
+        de le tuer. Pos\xE9idon, furieux, rendit la femme de Minos, Pasipha\xE9,
+        \xE9prise du taureau blanc. Elle demanda \xE0 l'architecte D\xE9dale de leur
+        construire un labyrinthe ou ils purent s'accoupler, ce qui donna naissance
+        au tr\xE8s connu Minotaure."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
