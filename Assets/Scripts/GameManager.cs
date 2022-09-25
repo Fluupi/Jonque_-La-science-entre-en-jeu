@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         {
             levelEndDisplay.gameObject.SetActive(true);
 
-            levelEndDisplay.Display(res[appliquerResNum].victoire, res[appliquerResNum].noms);
+            //levelEndDisplay.Display(res[appliquerResNum].victoire, res[appliquerResNum].noms);
         }
     }
 }
