@@ -163,7 +163,7 @@ MonoBehaviour:
   Path: GamJamSoundBankpartage3/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637996506567678957
+  lastModified: 637996442045561133
   FileSizes:
   - Name: Desktop
     Value: 1340
@@ -202,7 +202,7 @@ MonoBehaviour:
   - {fileID: 7641929067676813550}
   StringsBanks:
   - {fileID: -509844622553538246}
-  cacheTime: 637996506567678957
+  cacheTime: 637996442045561133
   cacheVersion: 9
 --- !u!114 &160928139744072954
 MonoBehaviour:
@@ -381,7 +381,7 @@ MonoBehaviour:
   Path: GamJamSoundBankpartage3/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637996506567668989
+  lastModified: 637996442045531206
   FileSizes:
   - Name: Desktop
     Value: 5183008
