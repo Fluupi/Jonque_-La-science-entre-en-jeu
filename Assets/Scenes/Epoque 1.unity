@@ -3596,6 +3596,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c24269a7b1edcc448079f43392e80ea, type: 3}
+--- !u!1 &1117428776 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4464038300675074531, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+  m_PrefabInstance: {fileID: 4464038299574695371}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1117428779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117428776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1124227887
 GameObject:
   m_ObjectHideFlags: 0
@@ -8288,6 +8323,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1877892777}
     m_Modifications:
+    - target: {fileID: 3228641627165382232, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charWinText
+      value: "S\xE9l\xE8ne a accept\xE9 de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228641627165382232, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charLoseText
+      value: "S\xE9l\xE8ne n'a pas accept\xE9 de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
     - target: {fileID: 3228641628219383973, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
       propertyPath: detailText
       value: "Cynisca de Sparte a r\xE9ellement exist\xE9. Elle est rest\xE9e dans
@@ -8298,6 +8341,14 @@ PrefabInstance:
         et non le pilote. Le pilote \xE9tait un homme, pr\xE9sent dans le stade.
         Mais Cynisca \xE9tait la propri\xE9taire du char et c'est donc elle qui a
         gagn\xE9."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228641628219383973, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charWinText
+      value: "Cynisca a accept\xE9 de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228641628219383973, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charLoseText
+      value: "Cynisca n'a pas accept\xE9 de rejoindre vos Jeux Olympiques"
       objectReference: {fileID: 0}
     - target: {fileID: 3619528265830390624, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
       propertyPath: m_Pivot.x
@@ -8386,6 +8437,14 @@ PrefabInstance:
     - target: {fileID: 3619528265830390625, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
       propertyPath: m_Name
       value: LevelEndDisplayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038300214997967, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charWinText
+      value: "Minos a accept\xE9 de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038300214997967, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charLoseText
+      value: "Minos n'a pas accept\xE9 de rejoindre vos Jeux Olympiques"
       objectReference: {fileID: 0}
     - target: {fileID: 4464038300518238310, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
       propertyPath: m_fontSize
