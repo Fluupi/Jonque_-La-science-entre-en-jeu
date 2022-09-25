@@ -1,14 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Tuto : MonoBehaviour
 {
-    [SerializeField] private GameObject go;
-
+    public UnityEvent endTutoEvent;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
-            go.SetActive(false);
+            endTutoEvent?.Invoke();
     }
 }

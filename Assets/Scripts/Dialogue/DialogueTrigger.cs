@@ -47,6 +47,28 @@ public class DialogueTrigger : MonoBehaviour
     public float dialogueSpeed;
     public Bateau bateau;
 
+    private void Start()
+    {
+        foreach(QuestionBranch q in question)
+        {
+            for (int i = 0; i < q.karma.Length; i++)
+            {
+                if(q.karma[i] == -1)
+                {
+                    q.karma[i] = -2;
+                }
+                else if (q.karma[i] == 0)
+                {
+                    q.karma[i] = 1;
+                }
+                else if (q.karma[i] == 1)
+                {
+                    q.karma[i] = 2;
+                }
+            }
+        }
+    }
+
     IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
@@ -118,6 +140,7 @@ public class DialogueTrigger : MonoBehaviour
         //End Dialogue
         else if(currentDialogue.lastDialogue == 2)
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Music/Music_Jingle_Vitory");
             disactivateZoneEvent?.Invoke();
             endDialogueEventFade?.Invoke(.6f, 0f, false);
             endDialogueEventPop?.Invoke(Vector2.zero, new Vector2(0, -950f), true) ;
@@ -165,6 +188,7 @@ public class DialogueTrigger : MonoBehaviour
         StopAllCoroutines();
 
         currentLikability += question[questionIndex].karma[0];
+        currentLikability = Mathf.Clamp(currentLikability, 0, 10);
         endQuestionEventPop?.Invoke(new Vector2(0, 116), new Vector2(0, -575), true);
         //Answer.SetActive(false);
         StartDialogue(question[questionIndex].dialogueIndex[0]);
@@ -177,6 +201,8 @@ public class DialogueTrigger : MonoBehaviour
         StopAllCoroutines();
 
         currentLikability += question[questionIndex].karma[1];
+        currentLikability = Mathf.Clamp(currentLikability, 0, 10);
+
         endQuestionEventPop?.Invoke(new Vector2(0, 116), new Vector2(0, -575), true);
         //Answer.SetActive(false);
         StartDialogue(question[questionIndex].dialogueIndex[1]);
@@ -190,6 +216,8 @@ public class DialogueTrigger : MonoBehaviour
         StopAllCoroutines();
 
         currentLikability += question[questionIndex].karma[2];
+        currentLikability = Mathf.Clamp(currentLikability, 0, 10);
+
         endQuestionEventPop?.Invoke(new Vector2(0, 116), new Vector2(0, -575), true);
         //Answer.SetActive(false);
         StartDialogue(question[questionIndex].dialogueIndex[2]);

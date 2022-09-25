@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{44de57a8-8f9e-4456-bc52-b86bc2ec9cde}">
+		<property name="assetPath">
+			<value>voix_rotation.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>2.7863958333333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{418d8ec7-7db9-4e59-926c-1ae60f364993}</destination>
+		</relationship>
+	</object>
+</objects>

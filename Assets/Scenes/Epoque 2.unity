@@ -5973,6 +5973,7 @@ MonoBehaviour:
   player: {fileID: 1992976421}
   levelEndDisplay: {fileID: 0}
   appliquerResNum: 0
+  commentaryFrequence: 10
 --- !u!1 &1233764156
 GameObject:
   m_ObjectHideFlags: 0
@@ -6382,11 +6383,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1096150755
-      Data2: 1141296579
-      Data3: 64349097
-      Data4: 9121994
-    Path: event:/Music/Music_Level_01
+      Data1: -1375653901
+      Data2: 1187984296
+      Data3: 49495196
+      Data4: -540062118
+    Path: event:/Music/Music_Level_02
   Event: 
   PlayEvent: 1
   StopEvent: 0

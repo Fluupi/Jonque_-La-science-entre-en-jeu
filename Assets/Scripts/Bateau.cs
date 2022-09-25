@@ -119,6 +119,7 @@ public class Bateau : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         FMODUnity.RuntimeManager.PlayOneShot("event:/Ship_Collision");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Commentary/Nelson/Collision");
         transform.Rotate(0, 0, 180);
         rb.velocity = Vector2.Reflect(lastVelocity, collision.contacts[0].normal);
     }

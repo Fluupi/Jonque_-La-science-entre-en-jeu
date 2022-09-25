@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private LevelEndDisplay levelEndDisplay;
     [SerializeField] [Range(0,2)] private int appliquerResNum;
     [SerializeField] private resultat[] res;
-
+    float timer = 0;
+    public float commentaryFrequence;
     private void Start()
     {
         res = new resultat[3];
@@ -29,14 +30,25 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        timer += Time.deltaTime;
+
         if (Input.GetKeyDown(KeyCode.Space) && !player.enDialogue)
         {
-            if(Random.Range(0,1) > .5f)
+            float rd = Random.Range(0, 1);
+            if (rd > .5f)
             {
                 FMODUnity.RuntimeManager.PlayOneShot("event:/Ship_Movement");
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Commentary/Nelson/Rotation");
             }
+            timer = 0;
 
             player.Kick();
+        }
+
+        if(timer > commentaryFrequence)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Commentary/Nelson/Nothing_To_Say");
+            timer = -5;
         }
 
         if (Input.GetKeyDown(KeyCode.W))
