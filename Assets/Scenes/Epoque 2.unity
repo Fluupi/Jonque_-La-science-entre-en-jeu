@@ -6556,6 +6556,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8755903582004210571, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
   m_PrefabInstance: {fileID: 257860698}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &257860700 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
+  m_PrefabInstance: {fileID: 257860698}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e82d82da9d8cf04b8261c15162568ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &259757196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10273,10 +10284,10 @@ MonoBehaviour:
     EventKeyPressed:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
+        - m_Target: {fileID: 1231752471}
+          m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+          m_MethodName: TriggerVoyageDeRtour
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11309,8 +11320,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1992976421}
-  levelEndDisplay: {fileID: 0}
-  appliquerResNum: 0
+  levelEndDisplay: {fileID: 1851434165}
+  dialogueTriggers:
+  - {fileID: 257860700}
+  - {fileID: 0}
+  - {fileID: 0}
   commentaryFrequence: 10
 --- !u!1 &1233764156
 GameObject:
@@ -13163,13 +13177,125 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3228641626609004292, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bf5f57b47293d114bb56ad8bb7904141, type: 3}
+    - target: {fileID: 3228641626612921053, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_text
+      value: "Spiridon Lou\xECs"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228641627165382232, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: detailText
+      value: "Spiridon Lou\xECs a beaucoup surpris et \xE9mu les spectateurs des
+        Jeux olympiques de 1896. Personne ne s'attendait \xE0 la victoire de ce parfait
+        inconnu. Mais son succ\xE8s a \xE9t\xE9 tel que son nom est entr\xE9 dans
+        la langue grecque. Quand on veut d\xE9signer une personne qui court longtemps,
+        on dit qu'elle court \"comme un Louis\" !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228641627165382232, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charWinText
+      value: "Lou\xECs a accept\xE9 de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228641627165382232, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charLoseText
+      value: "Lou\xECs n'a pas accept\xE9 de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228641627165382238, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_Name
+      value: LouisResult
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228641627700779513, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 35d66787db836864088f90daef6419c9, type: 3}
+    - target: {fileID: 3228641627706229792, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_text
+      value: 'Carl Schuhmann '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228641628219383971, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_Name
+      value: CarlResult
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228641628219383973, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: detailText
+      value: "Carl Schuhmann est celui qui a gagn\xE9 le plus d'\xE9preuves aux Jeux
+        olympiques de 1896. Sa gloire a cependant \xE9t\xE9 de courte dur\xE9e en
+        Allemagne et il est finalement parti en Angleterre o\xF9 il a \xE9t\xE9 mieux
+        accueilli."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228641628219383973, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charWinText
+      value: "Carl a accept\xE9 de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228641628219383973, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charLoseText
+      value: "Carl n'a pas accept\xE9 de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038299236020569, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038299236020569, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038299236020569, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1231752469}
+    - target: {fileID: 4464038299236020569, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038299730135699, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 78ba7266e099de84fb597a1e6f16c791, type: 3}
+    - target: {fileID: 4464038299735660362, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_text
+      value: Edward VII
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038300214997961, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_Name
+      value: EdwardResult
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038300214997967, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: detailText
+      value: "La renaissance des Jeux olympiques en 1896 doit beaucoup \xE0 Pierre
+        de Coubertin. Ce p\xE9dagogue pensait que \"l' exercice physique\" (nom fran\xE7ais
+        du sport) \xE9tait important pour la formation de l'esprit. Il a r\xE9ussi
+        \xE0 convaincre les personnalit\xE9s de son \xE9poque qu'une comp\xE9tition
+        internationale aurait un effet positif sur chaque pays. Le prince h\xE9ritier
+        anglais Edward VII et le roi Georges de Gr\xE8ce ont r\xE9pondu \xE0 son
+        appel et sont venus assister au premier num\xE9ro des Jeux Olympiques modernes."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038300214997967, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charWinText
+      value: "Edward a accept\xE9 de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038300214997967, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charLoseText
+      value: "Edward n'a pas accept\xE9 de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
 --- !u!224 &1851434164 stripped
 RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1137254465587382790, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3619528265830390624, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
   m_PrefabInstance: {fileID: 1851434163}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1851434165 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3619528265830390627, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+  m_PrefabInstance: {fileID: 1851434163}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2d9c26cd90b7c042bbe934bd6206f71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1869531848
 GameObject:
   m_ObjectHideFlags: 0

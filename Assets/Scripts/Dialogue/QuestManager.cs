@@ -13,6 +13,7 @@ public class QuestManager : MonoBehaviour
     int eventCounter;
     bool startEnd;
     public UnityEvent activateOlympieEvent;
+
     public void endQuests()
     {
         startEnd = true;
@@ -55,8 +56,6 @@ public class QuestManager : MonoBehaviour
         index += Time.deltaTime * speed;
 
         Quest.anchoredPosition = Vector2.Lerp(startPos, endPos, popAnimCurve.Evaluate(index));
-
-
 
         if (index >= 1)
         {
