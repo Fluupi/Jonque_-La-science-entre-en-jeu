@@ -147,9 +147,6 @@
 			<destination>{485f6bd6-662a-447b-938f-419749b0efc1}</destination>
 			<destination>{c24eb72d-f9dc-4489-af8b-1ea8e9604061}</destination>
 			<destination>{84435757-e6f9-4f45-b236-ec3d769f3f94}</destination>
-			<destination>{9fc3a435-86e8-4827-a1d7-e03d6ae8f28e}</destination>
-			<destination>{8aa64706-062b-475e-8793-b36633545e5c}</destination>
-			<destination>{ca7c77d5-14ec-4fe0-bdcd-819d24ac3c62}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{dd122d8d-4f48-4d05-8ab9-d0727c33bfed}">
@@ -174,8 +171,5 @@
 			<destination>{8547deba-7b7f-40d6-ae75-a802ef1047bf}</destination>
 		</relationship>
 	</object>
-	<object class="SilenceSound" id="{9fc3a435-86e8-4827-a1d7-e03d6ae8f28e}" />
-	<object class="SilenceSound" id="{8aa64706-062b-475e-8793-b36633545e5c}" />
-	<object class="SilenceSound" id="{ca7c77d5-14ec-4fe0-bdcd-819d24ac3c62}" />
 	<object class="MixerBusFader" id="{15932d16-05a9-4c57-a4bc-a87293a5edd6}" />
 </objects>

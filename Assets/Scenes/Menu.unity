@@ -843,6 +843,18 @@ MonoBehaviour:
           m_StringArgument: "Tr\xE8s prochainement...."
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1423431310}
+        m_TargetAssemblyTypeName: PlaySound, Assembly-CSharp
+        m_MethodName: FMODSound
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: event:/UI_Menu/UI_Menu_Validation
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &487021743
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,6 +1305,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283015845}
   m_CullTransparentMesh: 1
+--- !u!1 &1423431309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1423431311}
+  - component: {fileID: 1423431310}
+  m_Layer: 0
+  m_Name: Sounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1423431310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423431309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b27dbfc906a73449bfe974001ffe80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1423431311
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423431309}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.049, y: -1.794, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1474120203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,6 +1623,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Epoque 2
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1423431310}
+        m_TargetAssemblyTypeName: PlaySound, Assembly-CSharp
+        m_MethodName: FMODSound
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: event:/UI_Menu/UI_Menu_Validation
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1599633776
@@ -2051,6 +2118,7 @@ GameObject:
   - component: {fileID: 1819634615}
   - component: {fileID: 1819634614}
   - component: {fileID: 1819634613}
+  - component: {fileID: 1819634616}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -2106,6 +2174,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1819634616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819634612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1096150755
+      Data2: 1141296579
+      Data3: 64349097
+      Data4: 9121994
+    Path: event:/Music/Music_Level_01
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1879166461
 GameObject:
   m_ObjectHideFlags: 0
@@ -2340,6 +2438,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Epoque 1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1423431310}
+        m_TargetAssemblyTypeName: PlaySound, Assembly-CSharp
+        m_MethodName: FMODSound
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: event:/UI_Menu/UI_Menu_Validation
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &1961133068

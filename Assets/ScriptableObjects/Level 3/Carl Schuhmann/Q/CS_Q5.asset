@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2768424283a7ca143821039ed9100a29, type: 3}
+  m_Name: CS_Q5
+  m_EditorClassIdentifier: 
+  answer:
+  - "Principalement, quand m\xEAme. Mais je comprend, vous les Allemands, vous ne
+    pensez qu'\xE0 vos \xE9conomies."
+  - "Non, pas seulement, pour vos comp\xE9tences aussi. Mais les deux font la paire."
+  - "Non, bien s\xFBr, je viens ici avant tout pour vos comp\xE9tences en tant que
+    gymnaste."
+  karma: ffffffff0000000001000000
+  dialogueIndex: 100000001100000012000000
+  nextQuestionIndex: 000000000000000000000000

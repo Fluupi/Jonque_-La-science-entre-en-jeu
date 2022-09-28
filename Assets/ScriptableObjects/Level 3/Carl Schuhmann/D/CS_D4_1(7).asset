@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: becbb707332ed0f45bf1ebca2f855257, type: 3}
+  m_Name: CS_D4_1(7)
+  m_EditorClassIdentifier: 
+  numOfSentences: 2
+  sentences:
+  - '*L''expression de Carl reste neutre.*'
+  - '*L''expression de Carl reste neutre.*'
+  char1:
+  - {fileID: 21300000, guid: 35d66787db836864088f90daef6419c9, type: 3}
+  - {fileID: 21300000, guid: 35d66787db836864088f90daef6419c9, type: 3}
+  char2:
+  - {fileID: 21300000, guid: f3c633e2250844f40a2872822d43e93c, type: 3}
+  - {fileID: 21300000, guid: f3c633e2250844f40a2872822d43e93c, type: 3}
+  dialogueName: Carl Schuhmann
+  lastDialogue: 1

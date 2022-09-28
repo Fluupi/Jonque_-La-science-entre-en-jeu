@@ -131,11 +131,13 @@ public class DialogueTrigger : MonoBehaviour
         //First Question
         else if (currentDialogue.lastDialogue == 0) 
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/UI_Menu/UI_Menu_Skip");
             StartQuestion(true);
         }
         // Question that is not first
         else if(currentDialogue.lastDialogue == 1)
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/UI_Menu/UI_Menu_Skip");
             StartQuestion(false);
         }
         //End Dialogue

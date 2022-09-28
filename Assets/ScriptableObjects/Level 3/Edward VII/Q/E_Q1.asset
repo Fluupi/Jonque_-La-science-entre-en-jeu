@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2768424283a7ca143821039ed9100a29, type: 3}
+  m_Name: E_Q1
+  m_EditorClassIdentifier: 
+  answer:
+  - "Nous avons pens\xE9 \xE0 plusieurs type d'\xE9preuves, mais nous ne pensons
+    pas mettre en place d'\xE9preuve \xE9questre."
+  - "Nous cherchons \xE0 faire revivre les Jeux Olympiques, avec vous et plusieurs
+    autres pays."
+  - "Il y aura de nombreuses \xE9preuves sportives, comme des \xE9preuves de tir
+    par exemple."
+  karma: ffffffff0000000001000000
+  dialogueIndex: 040000000500000006000000
+  nextQuestionIndex: 040000000300000003000000

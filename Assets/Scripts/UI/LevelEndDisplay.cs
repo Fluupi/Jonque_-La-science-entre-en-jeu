@@ -21,6 +21,8 @@ public class LevelEndDisplay : MonoBehaviour
 
     public void DisplayResults(bool victory, bool char1Victory, bool char2Victory, bool char3Victory)
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Commentary/Nelson/Win");
+
         generalResult.text = (victory ? "Victoire !" : "Echec...");
 
         characterResult1.gameObject.SetActive(true);

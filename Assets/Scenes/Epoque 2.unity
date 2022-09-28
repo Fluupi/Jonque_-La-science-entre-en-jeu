@@ -11280,6 +11280,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2027528215}
+        m_TargetAssemblyTypeName: PlaySound, Assembly-CSharp
+        m_MethodName: FMODSound
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: event:/UI_Menu/UI_Menu_Skip
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1203652106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11361,12 +11373,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0373b0e45949c74e8ff7a333a510a72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CommentaryTimer: 0
+  timeBeforeNewCommentary: 0
+  probaComCollision: 0
+  probaComRotation: 0
+  probaComNothingToSay: 0
   player: {fileID: 1992976421}
   levelEndDisplay: {fileID: 1851434165}
   dialogueTriggers:
   - {fileID: 257860700}
   - {fileID: 1061392004}
   - {fileID: 1168312868}
+  angleToTriggerRotationDialogue: 60
   commentaryFrequence: 10
 --- !u!1 &1233764156
 GameObject:
@@ -13278,6 +13296,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3619528265830390625, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4464038299236020569, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -13783,6 +13805,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013856114}
   m_CullTransparentMesh: 1
+--- !u!1 &2027528214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2027528216}
+  - component: {fileID: 2027528215}
+  m_Layer: 0
+  m_Name: SoundCaller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2027528215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027528214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b27dbfc906a73449bfe974001ffe80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2027528216
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2027528214}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2053628258
 GameObject:
   m_ObjectHideFlags: 0

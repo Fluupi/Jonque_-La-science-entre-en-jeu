@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2768424283a7ca143821039ed9100a29, type: 3}
+  m_Name: SL_Q4
+  m_EditorClassIdentifier: 
+  answer:
+  - Participer aux jeux olympiques pourrait vous rapporter gros !
+  - "Le fran\xE7ais Pierre de Coubertin pense que le sport est une tr\xE8s bonne
+    \xE9cole de la vie."
+  - "Vous \xEAtes s\xFBr ? Il ne faudra pas venir pleurer apr\xE8s vous \xEAtre fait
+    ridiculiser."
+  karma: 01000000ffffffff00000000
+  dialogueIndex: 0d0000000e0000000f000000
+  nextQuestionIndex: 0100000000000000ffffffff

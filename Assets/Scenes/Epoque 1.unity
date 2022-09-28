@@ -2852,83 +2852,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &855374321
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 855374322}
-  - component: {fileID: 855374323}
-  m_Layer: 0
-  m_Name: Isle
-  m_TagString: wall
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &855374322
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 855374321}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -15.49, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1996093395}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!68 &855374323
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 855374321}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -7.4954515, y: 1.6537011}
-  - {x: -7.8011665, y: 0.7778812}
-  - {x: -8.0823765, y: -1.2858255}
-  - {x: -7.4966884, y: -1.5066854}
-  - {x: -6.4452615, y: -1.3519194}
-  - {x: -5.674677, y: -1.7829856}
-  - {x: -4.1271358, y: -1.6370207}
-  - {x: -2.588588, y: -2.369538}
-  - {x: -1.3750775, y: -3.397614}
-  - {x: 3.1222274, y: -2.8545063}
-  - {x: 5.645146, y: -2.8665273}
-  - {x: 6.1097856, y: -2.3708344}
-  - {x: 6.3778925, y: 0.08180487}
-  - {x: 3.4226594, y: -0.9921142}
-  - {x: 3.328367, y: 0.46866265}
-  - {x: 1.5694349, y: 0.11533266}
-  - {x: -0.27573985, y: 0.6845616}
-  - {x: -2.063684, y: 0.32213646}
-  - {x: -3.549066, y: -0.057449758}
-  - {x: -4.224208, y: 0.53056294}
-  - {x: -4.4446588, y: 1.3657662}
-  - {x: -5.125591, y: 0.6969106}
-  - {x: -5.983428, y: 1.1470377}
-  - {x: -6.3082414, y: 1.7683713}
-  - {x: -7.065542, y: 0.71646}
-  - {x: -7.467917, y: 1.636043}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: -6.11, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!1001 &895496541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3280,12 +3203,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0373b0e45949c74e8ff7a333a510a72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CommentaryTimer: 0
+  timeBeforeNewCommentary: 3
+  probaComCollision: 0.6
+  probaComRotation: 0.75
+  probaComNothingToSay: 0.3
   player: {fileID: 1014919475}
   levelEndDisplay: {fileID: 1983718575}
   dialogueTriggers:
   - {fileID: 8755903582379830595}
   - {fileID: 1332445892}
   - {fileID: 520723744}
+  angleToTriggerRotationDialogue: 50
   commentaryFrequence: 10
 --- !u!4 &965281881
 Transform:
@@ -4742,6 +4671,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1124397121}
+        m_TargetAssemblyTypeName: PlaySound, Assembly-CSharp
+        m_MethodName: FMODSound
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: event:/UI_Menu/UI_Menu_Skip
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1335202164
@@ -7015,13 +6956,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1877892777}
     m_Modifications:
+    - target: {fileID: 6376179960153269233, guid: 900075aa1ec75914db3316a1d06cf5f2, type: 3}
+      propertyPath: m_Color.a
+      value: 0.6862745
+      objectReference: {fileID: 0}
     - target: {fileID: 6376179960153269236, guid: 900075aa1ec75914db3316a1d06cf5f2, type: 3}
       propertyPath: m_Name
       value: Tuto
       objectReference: {fileID: 0}
     - target: {fileID: 6376179960153269236, guid: 900075aa1ec75914db3316a1d06cf5f2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6376179960153269238, guid: 900075aa1ec75914db3316a1d06cf5f2, type: 3}
       propertyPath: endTutoEvent.m_PersistentCalls.m_Calls.Array.size
@@ -7168,6 +7113,34 @@ PrefabInstance:
       value: "Pointez une direction et cliquez sur ESPACE pour ramer et faire avancer
         le navire !\n\nAllez parler avec les diff\xE9rentes personnes de cette \xE9poque
         et faites tout pour les convaincre de rejoindre vos Jeux Olympiques"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6376179960453326343, guid: 900075aa1ec75914db3316a1d06cf5f2, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: dbd9e4379f210994abfbe89d8be1cb05, type: 2}
+    - target: {fileID: 6376179960453326343, guid: 900075aa1ec75914db3316a1d06cf5f2, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6376179960453326343, guid: 900075aa1ec75914db3316a1d06cf5f2, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6376179960453326343, guid: 900075aa1ec75914db3316a1d06cf5f2, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6376179960453326343, guid: 900075aa1ec75914db3316a1d06cf5f2, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6376179960453326343, guid: 900075aa1ec75914db3316a1d06cf5f2, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 4062831421216897354, guid: dbd9e4379f210994abfbe89d8be1cb05, type: 2}
+    - target: {fileID: 6376179960453326343, guid: 900075aa1ec75914db3316a1d06cf5f2, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 900075aa1ec75914db3316a1d06cf5f2, type: 3}

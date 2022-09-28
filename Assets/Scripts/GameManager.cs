@@ -5,10 +5,17 @@ using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
+
+    [Header("FMOD")]
+    [HideInInspector] public float CommentaryTimer;
+    public float timeBeforeNewCommentary;
+    [Range(0,1)] public float probaComCollision, probaComRotation, probaComNothingToSay;
+
     [Header("Game")]
     [SerializeField] private Bateau player;
     [SerializeField] private LevelEndDisplay levelEndDisplay;
     [SerializeField] private DialogueTrigger[] dialogueTriggers;
+    public float angleToTriggerRotationDialogue = 60;
 
     float timer = 0;
     public float commentaryFrequence;
@@ -16,25 +23,51 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         timer += Time.deltaTime;
+        CommentaryTimer += Time.deltaTime;
+
+
 
         if (Input.GetKeyDown(KeyCode.Space) && !player.enDialogue)
         {
-            float rd = Random.Range(0, 1);
+            float rd = Random.Range(0f, 1f);
+
             if (rd > .5f)
             {
                 FMODUnity.RuntimeManager.PlayOneShot("event:/Ship_Movement");
-                FMODUnity.RuntimeManager.PlayOneShot("event:/Commentary/Nelson/Rotation");
             }
             timer = 0;
+
+            Vector3 targetDirection = player.target - player.transform.position;
+            float angle = Vector2.Angle((Vector2)targetDirection, (Vector2)player.transform.up);
+            // print(angle);
+
+            float rd2 = Random.Range(0f, 1f);
+            if (rd2 > probaComRotation && angle > angleToTriggerRotationDialogue && CommentaryTimer > timeBeforeNewCommentary)
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Commentary/Nelson/Rotation");
+                CommentaryTimer = 0;
+            }
 
             player.Kick();
         }
 
+
         if (timer > commentaryFrequence)
         {
-            if(!player.enDialogue)
-                FMODUnity.RuntimeManager.PlayOneShot("event:/Commentary/Nelson/Nothing_To_Say");
-            timer = -5;
+            float rd3 = Random.Range(0f, 1f);
+            if (rd3 > probaComNothingToSay)
+            {
+                if(!player.enDialogue && CommentaryTimer > timeBeforeNewCommentary)
+                {
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/Commentary/Nelson/Nothing_To_Say");
+                    CommentaryTimer = 0;
+                    timer = -5;
+                }
+            }
+            else
+            {
+                timer = 0;
+            }
         }
     }
 

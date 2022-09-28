@@ -26,12 +26,14 @@ public class Bateau : MonoBehaviour
     [SerializeField] private float speed = 0f;
 
     //Target
-    [SerializeField] private Vector3 target;
+    [SerializeField] public Vector3 target;
     private float maxDistanceFromTarget = 0.05f;
 
+    GameManager gameManager;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     public void SwitchEnDialogue(bool inOrOut)
@@ -119,18 +121,25 @@ public class Bateau : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         FMODUnity.RuntimeManager.PlayOneShot("event:/Ship_Collision");
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Commentary/Nelson/Collision");
+        float rd = UnityEngine.Random.Range(0f,1f);
+        if(rd > gameManager.probaComCollision && gameManager.CommentaryTimer > gameManager.timeBeforeNewCommentary)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/Commentary/Nelson/Collision");
+            gameManager.CommentaryTimer = 0;
+        }
         transform.Rotate(0, 0, 180);
         rb.velocity = Vector2.Reflect(lastVelocity, collision.contacts[0].normal);
     }
 
     private void LookTowards()
     {
+
         //Compute rotation needed to reach target
         Quaternion rotation = Quaternion.LookRotation(Vector3.forward, target - transform.position);   
         
         //Nerf rotation using maxRotationSpeed (how much if max kick) and kick (energy left from last speedup)
         rotation = Quaternion.RotateTowards(transform.rotation, rotation, maxRotationSpeed * kickPercentage);
+
 
         //Apply nerfed rotation
         rb.SetRotation(rotation);                                                                              

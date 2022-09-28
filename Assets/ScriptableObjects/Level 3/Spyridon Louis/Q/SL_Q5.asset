@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2768424283a7ca143821039ed9100a29, type: 3}
+  m_Name: SL_Q5
+  m_EditorClassIdentifier: 
+  answer:
+  - "Parce que vous comprenez ma langue ? Vous \xEAtes plus civilis\xE9 que pr\xE9vu."
+  - "Vous courrez cependant bien et vite, \xE7a pourrait vous \xEAtre utile pendant
+    la comp\xE9tition."
+  - "Veuillez m'excusez. J'ai remarqu\xE9 que vous \xE9tiez sportif, vous pourriez
+    participer aux jeux olympiques !"
+  karma: ffffffff0000000001000000
+  dialogueIndex: 100000001100000012000000
+  nextQuestionIndex: ffffffff0000000001000000
