@@ -3214,7 +3214,7 @@ MonoBehaviour:
   - {fileID: 8755903582379830595}
   - {fileID: 1332445892}
   - {fileID: 520723744}
-  angleToTriggerRotationDialogue: 50
+  angleToTriggerRotationDialogue: 35
   commentaryFrequence: 10
 --- !u!4 &965281881
 Transform:
@@ -3394,6 +3394,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1829210912}
     m_Modifications:
+    - target: {fileID: 855374321, guid: 1c24269a7b1edcc448079f43392e80ea, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2067822082, guid: 1c24269a7b1edcc448079f43392e80ea, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3996120833323409557, guid: 1c24269a7b1edcc448079f43392e80ea, type: 3}
       propertyPath: m_Name
       value: Map
@@ -7112,7 +7120,7 @@ PrefabInstance:
       propertyPath: m_text
       value: "Pointez une direction et cliquez sur ESPACE pour ramer et faire avancer
         le navire !\n\nAllez parler avec les diff\xE9rentes personnes de cette \xE9poque
-        et faites tout pour les convaincre de rejoindre vos Jeux Olympiques"
+        et faites tout pour les convaincre de rejoindre les Jeux olympiques"
       objectReference: {fileID: 0}
     - target: {fileID: 6376179960453326343, guid: 900075aa1ec75914db3316a1d06cf5f2, type: 3}
       propertyPath: m_fontAsset
