@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: Z_Q5
   m_EditorClassIdentifier: 
   answer:
-  - "Principalement, quand m\xEAme. Mais je comprend, vous les Allemands, vous ne
-    pensez qu'\xE0 vos \xE9conomies."
-  - "Non, pas seulement, pour vos comp\xE9tences aussi. Mais les deux font la paire."
-  - "Non, bien s\xFBr, je viens ici avant tout pour vos comp\xE9tences en tant que
-    gymnaste."
+  - "Oui : si les Russes envoient une bombe atomique sur nous, ce sera \xE0 cause
+    de vous."
+  - "Une petite blague pour vous les cr\xE9ationnistes d'Ukraine :\_ \u2013 Maman,
+    d\u2019o\xF9 venons-nous ? \u2013 Dieu nous a cr\xE9\xE9s... \u2013 Papa dit
+    que nous sommes des descendants de singes... \u2013 Eh bien, ton papa parle de
+    sa famille, et moi je parle de la mienne !"
+  - "Le sport est important pour la sant\xE9."
   karma: ffffffff0000000001000000
   dialogueIndex: 100000001100000012000000
   nextQuestionIndex: 000000000000000000000000

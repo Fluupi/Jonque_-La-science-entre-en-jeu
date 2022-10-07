@@ -4145,103 +4145,103 @@ PrefabInstance:
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: a36f5724b073b7744ae7c7b367358638, type: 2}
+      objectReference: {fileID: 11400000, guid: d0aaf12e5c6cd574eb8c821c0f18b96e, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: ff903bc4b4924864f8cf006264152ac1, type: 2}
+      objectReference: {fileID: 11400000, guid: a7fa06a625fc3ac48b5a8b6ec9f5f199, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: ea89e769068fb7a4b93b2b48381fbb0e, type: 2}
+      objectReference: {fileID: 11400000, guid: 347c6633b30983b458397538b3896bcf, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 2b26a15c2b519a248ba4039f20d18492, type: 2}
+      objectReference: {fileID: 11400000, guid: 8ec16949ff6a99d4da72b61a1508bed8, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[4]
       value: 
-      objectReference: {fileID: 11400000, guid: eb108b9ca0b712e48a90f03b181d72ac, type: 2}
+      objectReference: {fileID: 11400000, guid: 4bb7b9366dedef746b23fcb47d8c6e49, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[5]
       value: 
-      objectReference: {fileID: 11400000, guid: 1bd18ce62db7e0d42a1865d57ebfb3c6, type: 2}
+      objectReference: {fileID: 11400000, guid: 82ece850932cfc94fb37b82622e22881, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[6]
       value: 
-      objectReference: {fileID: 11400000, guid: 912aed2f93dd4054ea38cfc5bffe359f, type: 2}
+      objectReference: {fileID: 11400000, guid: c39fefab1a557f54d8ca0eef6660b4a5, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[7]
       value: 
-      objectReference: {fileID: 11400000, guid: d8b623f12c07d82419d1f319dc9331ef, type: 2}
+      objectReference: {fileID: 11400000, guid: 56999b4bb2fd23e4ab2a5d7556b9cb10, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[8]
       value: 
-      objectReference: {fileID: 11400000, guid: 23bed1037c4b0074992e430af7fb0f56, type: 2}
+      objectReference: {fileID: 11400000, guid: 91c400c6ecd6d5c47a7bdfec7e32879e, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[9]
       value: 
-      objectReference: {fileID: 11400000, guid: 904c3971966f1d045a461fd10c3e66cd, type: 2}
+      objectReference: {fileID: 11400000, guid: 0300d2e00d1ef884283a92590c43ad5a, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: question.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 19ebf372dd45948428495244e7b6028e, type: 2}
+      objectReference: {fileID: 11400000, guid: 9422287ba409efa40bc24a505ff065e7, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: question.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 9158969ac9f6ece4cbb435e5b31e8a90, type: 2}
+      objectReference: {fileID: 11400000, guid: 6ab4c1a013e8db24db924307ef158020, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: question.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 9824736d4f3537a42be6a2d0ed679403, type: 2}
+      objectReference: {fileID: 11400000, guid: ac80f8f6db63ec442af22890d7b90120, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: question.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 5ab88b2388c83684ba279f0c386584f4, type: 2}
+      objectReference: {fileID: 11400000, guid: e917008b193e4c045b890f33aff13cd0, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: question.Array.data[4]
       value: 
-      objectReference: {fileID: 11400000, guid: d93f5016d42ff50458b5102134ac5836, type: 2}
+      objectReference: {fileID: 11400000, guid: 4ce5b5deb11141a4f8eb9fdcbc79451c, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: question.Array.data[5]
       value: 
-      objectReference: {fileID: 11400000, guid: 9bafa8a194281bf47b8d14cde6cf5b83, type: 2}
+      objectReference: {fileID: 11400000, guid: a3f715caf93107d4e990283c6390c79a, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[10]
       value: 
-      objectReference: {fileID: 11400000, guid: 50afdcb776b612041902e2ee9e3a6446, type: 2}
+      objectReference: {fileID: 11400000, guid: e6ff6ffb79aa4d24daaee92bd110201c, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[11]
       value: 
-      objectReference: {fileID: 11400000, guid: 21cba47a8c1d6b44784d5564f19cc0b9, type: 2}
+      objectReference: {fileID: 11400000, guid: dfe6e571b26cd344db062e67e61dd3f0, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[12]
       value: 
-      objectReference: {fileID: 11400000, guid: 8f1b4728b06caa34a8c6e363b4ffc6fd, type: 2}
+      objectReference: {fileID: 11400000, guid: e3c43856e77c34943833ba234e291855, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[13]
       value: 
-      objectReference: {fileID: 11400000, guid: c2858ada93d352d48a442acfc66a07d1, type: 2}
+      objectReference: {fileID: 11400000, guid: 118757ec5daa95c43a6e0f639c277e7b, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[14]
       value: 
-      objectReference: {fileID: 11400000, guid: eaa32e9f0de3a9f419115dff564a5979, type: 2}
+      objectReference: {fileID: 11400000, guid: a86560dce426bbb4798f3d05e3a2eb77, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[15]
       value: 
-      objectReference: {fileID: 11400000, guid: af908c064738f834489ffeea35320e6b, type: 2}
+      objectReference: {fileID: 11400000, guid: fdcfcc0b1f895634d97027189d2db3ae, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[16]
       value: 
-      objectReference: {fileID: 11400000, guid: 822d3840ab8103a429a146a15fdaf0c8, type: 2}
+      objectReference: {fileID: 11400000, guid: de0247e4491333a4c9668a3c6f5b7052, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[17]
       value: 
-      objectReference: {fileID: 11400000, guid: 6a2080660c755ce42ad3ea0f3239622d, type: 2}
+      objectReference: {fileID: 11400000, guid: 24ea3a0b8ae1c1f4aa7bb0a73b2e4347, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: dialogue.Array.data[18]
       value: 
-      objectReference: {fileID: 11400000, guid: 7c3defb02cbc79d4cb70d99240cbac14, type: 2}
+      objectReference: {fileID: 11400000, guid: 372a6314e8349b3498b7abfbc11f28ea, type: 2}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: endDialogueEvent.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -5451,8 +5451,11 @@ PrefabInstance:
       objectReference: {fileID: 743571930}
     - target: {fileID: 188858239901499469, guid: f0f7d02d60a4eb24e9e5690b2154c6fa, type: 3}
       propertyPath: keyEvents.Array.data[0].EventKeyPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: "Carl Schuhmann souffre de la mauvaise r\xE9putation de la gymnastique
-        dans son pays. Il fait ce sport en cachette."
+      value: "Volodymyr Zelensky est devenu c\xE9l\xE8bre \xE0 travers le monde en
+        2022. Il est le pr\xE9sident qui a r\xE9sist\xE9 \xE0 l'impitoyable Russie.
+        Il est le pr\xE9sident qui a pr\xE9f\xE9r\xE9 rester dans son pays en danger
+        plut\xF4t que de se mettre \xE0 l'abri ailleurs. Le CIO a d'ailleurs d\xE9cid\xE9
+        de soutenir l'Ukraine plut\xF4t que la Russie."
       objectReference: {fileID: 0}
     - target: {fileID: 8871460675623990967, guid: f0f7d02d60a4eb24e9e5690b2154c6fa, type: 3}
       propertyPath: m_Name
@@ -5538,8 +5541,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 188858239901499469, guid: f0f7d02d60a4eb24e9e5690b2154c6fa, type: 3}
       propertyPath: keyEvents.Array.data[0].EventKeyPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: "Ne lui parlez pas de sa taille ! Il faisait 1m63 mais il \xE9tait costaud
-        et il a battu de plus grands et lourds que lui."
+      value: "Volodymyr Zelensky est aussi devenu c\xE9l\xE8bre pour sa fa\xE7on
+        d\xE9contract\xE9e d'occuper le pouvoir : ancien acteur, habile aux selfies,
+        en tshirt sur son fauteuil pr\xE9sidentiel, il avait tout pour plaire aux
+        masses du XXIe si\xE8cle."
       objectReference: {fileID: 0}
     - target: {fileID: 8871460675623990967, guid: f0f7d02d60a4eb24e9e5690b2154c6fa, type: 3}
       propertyPath: m_Name
@@ -11187,8 +11192,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 188858239901499469, guid: f0f7d02d60a4eb24e9e5690b2154c6fa, type: 3}
       propertyPath: keyEvents.Array.data[0].EventKeyPressed.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
-      value: "Carl Schuhmann a suivi des \xE9tudes d'orf\xE8vrerie. Les descendants
-        de Carl Schuhmann sont toujours bijoutiers \xE0 Berlin en 2022 !"
+      value: "Depuis 1972, la s\xE9curit\xE9 est un des th\xE8mes importants que
+        doivent prendre en compte les organisateurs de Jeux olympiques. En 1972,
+        des terroristes avaient pris en otage des sportifs venus aux JO puis ils
+        les avaient tu\xE9s. Zelensky sera donc s\xFBrement sensible \xE0 ce th\xE8me."
       objectReference: {fileID: 0}
     - target: {fileID: 8871460675623990967, guid: f0f7d02d60a4eb24e9e5690b2154c6fa, type: 3}
       propertyPath: m_Name
