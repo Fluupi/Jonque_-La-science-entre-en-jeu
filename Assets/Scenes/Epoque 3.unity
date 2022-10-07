@@ -4068,7 +4068,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8755903582004210565, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: m_Name
-      value: Carl Schuhmann
+      value: Zelensky
       objectReference: {fileID: 0}
     - target: {fileID: 8755903582004210570, guid: afa30688732b2474d8e964eefd1e6e4f, type: 3}
       propertyPath: a1
@@ -13851,7 +13851,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2057734038}
   m_Layer: 0
-  m_Name: Carl Schuhmann
+  m_Name: Zelensky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

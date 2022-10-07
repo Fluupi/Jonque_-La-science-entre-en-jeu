@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: becbb707332ed0f45bf1ebca2f855257, type: 3}
-  m_Name: CS_D2_1(1)
+  m_Name: Z_D2_3(3)
   m_EditorClassIdentifier: 
   numOfSentences: 2
   sentences:
-  - '*Carl esquisse un sourire*'
-  - Qu'est ce qui vous ferait plaisir ?
+  - Zelensky fronce les sourcils.
+  - "Cessez vos provocations. Imaginez que vous soyez \xE0 notre place."
   char1:
   - {fileID: 21300000, guid: 35d66787db836864088f90daef6419c9, type: 3}
   - {fileID: 21300000, guid: 35d66787db836864088f90daef6419c9, type: 3}

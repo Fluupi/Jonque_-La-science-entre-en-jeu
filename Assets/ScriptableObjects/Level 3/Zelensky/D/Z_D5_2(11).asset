@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: becbb707332ed0f45bf1ebca2f855257, type: 3}
-  m_Name: CS_D6_3(15)
+  m_Name: Z_D5_2(11)
   m_EditorClassIdentifier: 
   numOfSentences: 2
   sentences:
-  - "*Carl fait une t\xEAte \xE9trange.*"
-  - "Vous avez piqu\xE9 ma curiosit\xE9, je vais voir."
+  - "Zelensky a l'air rassur\xE9."
+  - "J'enverrai s\xFBrement des sportifs. VZelensky a l'air rassur\xE9.ous avez l'air
+    d'avoir bien pr\xE9par\xE9 les festivit\xE9s. Ces JO ne doivent pas finir en
+    bain de sang comme les JO de 1972."
   char1:
   - {fileID: 21300000, guid: 35d66787db836864088f90daef6419c9, type: 3}
   - {fileID: 21300000, guid: 35d66787db836864088f90daef6419c9, type: 3}

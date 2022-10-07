@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: becbb707332ed0f45bf1ebca2f855257, type: 3}
-  m_Name: CS_D4_3(9)
+  m_Name: Z_D2_1(1)
   m_EditorClassIdentifier: 
   numOfSentences: 2
   sentences:
-  - "*Carl l\xE8ve un sourcil d'inter\xEAt.*"
-  - "C'est int\xE9ressant... mais encore ? Je ne peux pas laisser ma boutique comme
-    \xE7a !"
+  - Zelensky a l'air content.
+  - "C'est tr\xE8s courageux de votre part de venir nous voir en personne. Vous n'avez
+    pas eu peur des repr\xE9sailles russes ?"
   char1:
   - {fileID: 21300000, guid: 35d66787db836864088f90daef6419c9, type: 3}
   - {fileID: 21300000, guid: 35d66787db836864088f90daef6419c9, type: 3}

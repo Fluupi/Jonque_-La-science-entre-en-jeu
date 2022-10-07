@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2768424283a7ca143821039ed9100a29, type: 3}
+  m_Name: Z_Q1
+  m_EditorClassIdentifier: 
+  answer:
+  - "Les Jeux olympiques se pr\xE9parent et ils pourraient \xEAtre pour vous l'occasion
+    de  redonner une bonne image \xE0 votre pays !"
+  - "Dans son histoire, le CIO est toujours rest\xE9 neutre sur les questions politiques
+    mais cette ann\xE9e, nous ne pouvons pas rester sans r\xE9action. Nous vous proposons
+    de participer aux Jeux olympiques et nous ferons en sorte qu'aucun repr\xE9sentant
+    de la Russie ne soit pr\xE9sent \xE0 l'\xE9v\xE9nement."
+  - "Ils me suivent en ce moment. Je viens de leur r\xE9v\xE9ler votre position."
+  karma: 0000000001000000ffffffff
+  dialogueIndex: 040000000500000006000000
+  nextQuestionIndex: 040000000300000005000000

@@ -10,15 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2768424283a7ca143821039ed9100a29, type: 3}
-  m_Name: CS_Q4
+  m_Name: Z_Q3
   m_EditorClassIdentifier: 
   answer:
-  - "La gloire vous attend, vous et votre \xE9quipe, Carl ! Montrez ce dont vous
-    \xEAtes capable."
-  - "Si vous ne pouvez pas laisser quelques cailloux derri\xE8re, mieux vaut ne pas
-    venir."
-  - "Vous pouvez laisser la boutique \xE0 un amis en attendant ? Le sport n'attend
-    pas, Carl."
+  - "La s\xE9curit\xE9 fait partie de nos priorit\xE9s. Les acc\xE8s aux stades seront
+    filtr\xE9s et les fouilles syst\xE9matiques."
+  - Ecoutez, on fait ce qu'on peut.
+  - "Les Ukrainiens ont tout notre soutien, o\xF9 qu'ils soient."
   karma: 01000000ffffffff00000000
-  dialogueIndex: 0d0000000e0000000f000000
+  dialogueIndex: 0a0000000b0000000c000000
   nextQuestionIndex: 000000000000000000000000

@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2768424283a7ca143821039ed9100a29, type: 3}
-  m_Name: CS_Q5
+  m_Name: Z_Q4
   m_EditorClassIdentifier: 
   answer:
-  - "Principalement, quand m\xEAme. Mais je comprend, vous les Allemands, vous ne
-    pensez qu'\xE0 vos \xE9conomies."
-  - "Non, pas seulement, pour vos comp\xE9tences aussi. Mais les deux font la paire."
-  - "Non, bien s\xFBr, je viens ici avant tout pour vos comp\xE9tences en tant que
-    gymnaste."
-  karma: ffffffff0000000001000000
-  dialogueIndex: 100000001100000012000000
+  - "Je viens pour la beaut\xE9 du sport et le rayonnement international de Paris.
+    J'aime quand les hommes et les femmes se surpassent."
+  - Le sport et la guerre m'enchantent tous les deux autant.
+  - "Je ne pense qu'\xE0 l'argent des sponsors. Et mon fr\xE8re est ma\xE7on : \xE7a
+    va lui donner du travail."
+  karma: 0100000000000000ffffffff
+  dialogueIndex: 0d0000000e0000000f000000
   nextQuestionIndex: 000000000000000000000000
