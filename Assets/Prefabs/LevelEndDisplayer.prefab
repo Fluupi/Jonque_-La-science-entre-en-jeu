@@ -1169,11 +1169,11 @@ PrefabInstance:
       objectReference: {fileID: 3619528265830390627}
     - target: {fileID: 1242152759550326598, guid: bcdf328637338354bb30891670083c85, type: 3}
       propertyPath: charWinText
-      value: "Minos a accept\xE9 de rejoindre vos Jeux Olympiques"
+      value: Edward a accepte de rejoindre vos Jeux Olympiques
       objectReference: {fileID: 0}
     - target: {fileID: 1242152759550326598, guid: bcdf328637338354bb30891670083c85, type: 3}
       propertyPath: charLoseText
-      value: "Minos n'a pas accept\xE9 de rejoindre vos Jeux Olympiques"
+      value: Edward n'a pas accepte de rejoindre vos Jeux Olympiques
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcdf328637338354bb30891670083c85, type: 3}
@@ -1324,11 +1324,11 @@ PrefabInstance:
       objectReference: {fileID: 3619528265830390627}
     - target: {fileID: 1242152759550326598, guid: bcdf328637338354bb30891670083c85, type: 3}
       propertyPath: charWinText
-      value: "S\xE9l\xE8ne a accept\xE9 de rejoindre vos Jeux Olympiques"
+      value: Louis a accepte de rejoindre vos Jeux Olympiques
       objectReference: {fileID: 0}
     - target: {fileID: 1242152759550326598, guid: bcdf328637338354bb30891670083c85, type: 3}
       propertyPath: charLoseText
-      value: "S\xE9l\xE8ne n'a pas accept\xE9 de rejoindre vos Jeux Olympiques"
+      value: Louis n'a pas accepte de rejoindre vos Jeux Olympiques
       objectReference: {fileID: 0}
     - target: {fileID: 1242152759550326599, guid: bcdf328637338354bb30891670083c85, type: 3}
       propertyPath: m_Type
@@ -1514,11 +1514,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1242152759550326598, guid: bcdf328637338354bb30891670083c85, type: 3}
       propertyPath: charWinText
-      value: "Cynisca a accept\xE9 de rejoindre vos Jeux Olympiques"
+      value: Carl a accepte de rejoindre vos Jeux Olympiques
       objectReference: {fileID: 0}
     - target: {fileID: 1242152759550326598, guid: bcdf328637338354bb30891670083c85, type: 3}
       propertyPath: charLoseText
-      value: "Cynisca n'a pas accept\xE9 de rejoindre vos Jeux Olympiques"
+      value: Carl n'a pas accepte de rejoindre vos Jeux Olympiques
       objectReference: {fileID: 0}
     - target: {fileID: 1242152760102785987, guid: bcdf328637338354bb30891670083c85, type: 3}
       propertyPath: m_text

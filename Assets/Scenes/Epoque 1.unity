@@ -4230,6 +4230,7 @@ MonoBehaviour:
   smooth: 0.3
   topRightB: {fileID: 1124227888}
   bottomLeftB: {fileID: 500917791}
+  haha: 0
 --- !u!1 &1322907770 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6376179960153269236, guid: 900075aa1ec75914db3316a1d06cf5f2, type: 3}
@@ -7800,6 +7801,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2257667014866190702, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723584914316335082, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3228641627165382232, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
       propertyPath: detailText
       value: "S\xE9l\xE8ne n'a pas r\xE9ellement exist\xE9, mais le mythe d'H\xE9l\xE8ne
@@ -7811,9 +7820,29 @@ PrefabInstance:
         ! Cela posa probl\xE8me car elle \xE9tait mari\xE9e \xE0 M\xE9n\xE9las, le
         roi de Sparte, ce qui engendrera plus tard la fameuse guerre de Troie..."
       objectReference: {fileID: 0}
+    - target: {fileID: 3228641627165382232, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charWinText
+      value: Selene a accepte de rejoindre vos Jeux Olympiques
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228641627165382232, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charLoseText
+      value: Selene n'a pas accepte de rejoindre vos Jeux Olympiques
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228641628219383973, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charWinText
+      value: Cynisca a accepte de rejoindre vos Jeux Olympiques
+      objectReference: {fileID: 0}
+    - target: {fileID: 3228641628219383973, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charLoseText
+      value: Cynisca n'a pas accepte de rejoindre vos Jeux Olympiques
+      objectReference: {fileID: 0}
     - target: {fileID: 3619528265830390624, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4447965664486932728, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4464038300214997967, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
       propertyPath: detailText
@@ -7825,6 +7854,14 @@ PrefabInstance:
         \xE9prise du taureau blanc. Elle demanda \xE0 l'architecte D\xE9dale de leur
         construire un labyrinthe ou ils purent s'accoupler, ce qui donna naissance
         au tr\xE8s connu Minotaure."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038300214997967, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charWinText
+      value: Minos a accepte de rejoindre vos Jeux Olympiques
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464038300214997967, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
+      propertyPath: charLoseText
+      value: Minos n'a pas accepte de rejoindre vos Jeux Olympiques
       objectReference: {fileID: 0}
     - target: {fileID: 4464038300518238310, guid: 3fc038f1e8e0c27468e3e8a5ef666fc5, type: 3}
       propertyPath: m_fontSize

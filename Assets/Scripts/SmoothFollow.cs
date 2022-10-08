@@ -9,14 +9,28 @@ public class SmoothFollow : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
     public Transform topRightB, bottomLeftB;
     BoxCollider2D cameraBox;
+    public bool haha = false;
+    Bateau bateau;
 
-
+    private void Start()
+    {
+        bateau = playerT.GetComponent<Bateau>();
+    }
     void Update()
     {
         Vector2 targetPos = playerT.position;
-        targetPos.x = Mathf.Clamp(targetPos.x, bottomLeftB.position.x, topRightB.position.x);
-        targetPos.y = Mathf.Clamp(targetPos.y, bottomLeftB.position.y, topRightB.position.y);
-        transform.position = Vector3.SmoothDamp(new Vector3(transform.position.x, transform.position.y, -7), new Vector3(targetPos.x, targetPos.y, -7), ref velocity, smooth);
+        if (!haha)
+        {
+            targetPos.x = Mathf.Clamp(targetPos.x, bottomLeftB.position.x, topRightB.position.x);
+            targetPos.y = Mathf.Clamp(targetPos.y, bottomLeftB.position.y, topRightB.position.y);
+        }
+            transform.position = new Vector3(targetPos.x, targetPos.y, -7);
+
+/*        if(bateau.tpTimer < 1)
+        {
+        }
+        else
+            transform.position = Vector3.SmoothDamp(new Vector3(transform.position.x, transform.position.y, -7), new Vector3(targetPos.x, targetPos.y, -7), ref velocity, smooth);*/
     }   
 
 /*    void AspectRationBoxChange()

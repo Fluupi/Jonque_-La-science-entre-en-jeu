@@ -17,10 +17,10 @@ MonoBehaviour:
   - Selensky reste perplexe.
   - "Je vais r\xE9fl\xE9chir et je vous dirai plus tard."
   char1:
-  - {fileID: 21300000, guid: 35d66787db836864088f90daef6419c9, type: 3}
-  - {fileID: 21300000, guid: 35d66787db836864088f90daef6419c9, type: 3}
+  - {fileID: 21300000, guid: fda0791a9da645441bb3dc9cd02c0228, type: 3}
+  - {fileID: 21300000, guid: fda0791a9da645441bb3dc9cd02c0228, type: 3}
   char2:
-  - {fileID: 21300000, guid: f3c633e2250844f40a2872822d43e93c, type: 3}
-  - {fileID: 21300000, guid: f3c633e2250844f40a2872822d43e93c, type: 3}
-  dialogueName: Carl Schuhmann
+  - {fileID: 21300000, guid: f621e36630141524ebf73423790f4b1c, type: 3}
+  - {fileID: 21300000, guid: f621e36630141524ebf73423790f4b1c, type: 3}
+  dialogueName: Zelenskyy
   lastDialogue: 2

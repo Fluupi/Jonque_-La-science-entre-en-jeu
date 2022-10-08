@@ -28,10 +28,11 @@ public class Bateau : MonoBehaviour
     //Target
     [SerializeField] public Vector3 target;
     private float maxDistanceFromTarget = 0.05f;
-
+    TrailRenderer trail;
     GameManager gameManager;
     private void Start()
     {
+        trail = GetComponentInChildren<TrailRenderer>();
         rb = GetComponent<Rigidbody2D>();
         gameManager = FindObjectOfType<GameManager>();
     }
@@ -46,9 +47,17 @@ public class Bateau : MonoBehaviour
         kickLeftTime = kickDuration;
         speed = kickSpeed;
     }
-
+    public float tpTimer = 0;
     private void Update()
     {
+        tpTimer += Time.deltaTime;
+
+        if (tpTimer < 1)
+        {
+            trail.time = 0;
+        }
+        else trail.time = 1;
+
         if(numberOfQuestsDone >= 3)
         {
             endQuestEvent?.Invoke();
@@ -129,6 +138,8 @@ public class Bateau : MonoBehaviour
         }
         transform.Rotate(0, 0, 180);
         rb.velocity = Vector2.Reflect(lastVelocity, collision.contacts[0].normal);
+
+        
     }
 
     private void LookTowards()
@@ -149,6 +160,29 @@ public class Bateau : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawSphere(target, .2f);
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "TpBound" && tpTimer > .1f)
+        {
+            TpCollider tpCol = collision.GetComponent<TpCollider>();
+            print(1);
+            var col = tpCol.otherCollider.position;
+            if (tpCol.vertical)
+            {
+                col.x = transform.position.x;
+                col.y = tpCol.symetricPos - tpCol.offSet;
+            }
+            else
+            {
+                col.x = tpCol.symetricPos - tpCol.offSet;
+                col.y = transform.position.y;
+            }
+            transform.position = col;
+            tpTimer = 0;
+        }
     }
 
 }

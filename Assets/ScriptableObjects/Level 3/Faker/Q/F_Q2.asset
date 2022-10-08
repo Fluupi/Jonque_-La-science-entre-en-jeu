@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2768424283a7ca143821039ed9100a29, type: 3}
+  m_Name: F_Q2
+  m_EditorClassIdentifier: 
+  answer:
+  - "Le sport est important pour ta sant\xE9. L'esport ? Pas s\xFBr."
+  - "Oui, c'est ta coupe de cheveux qui m'\xE9nerve. Il faudra couper tout \xE7a
+    avant les JO."
+  - "Non, je voulais t'inviter \xE0 une nouvelle \xE9preuve des Jeux olympiques :
+    l'esport."
+  karma: 00000000ffffffff01000000
+  dialogueIndex: 070000000900000008000000
+  nextQuestionIndex: 040000000500000003000000

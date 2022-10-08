@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2768424283a7ca143821039ed9100a29, type: 3}
+  m_Name: F_Q4
+  m_EditorClassIdentifier: 
+  answer:
+  - "Non, je pense que l'esport est un sport comme les autres. D'ailleurs on voit
+    de nouveaux jeux vid\xE9o qui permettent de soigner des maladies !"
+  - "Oui, \xE7a se voit sur ta t\xEAte."
+  - "Non non ! Bon alors rendez-vous \xE0 Paris en 2024 ?"
+  karma: 01000000ffffffff00000000
+  dialogueIndex: 0d0000000e0000000f000000
+  nextQuestionIndex: 000000000000000000000000

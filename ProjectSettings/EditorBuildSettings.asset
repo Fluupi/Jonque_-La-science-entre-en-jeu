@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Epoque 2.unity
     guid: 2cb7d21bfa03a03499c76c3a84653803
+  - enabled: 1
+    path: Assets/Scenes/Epoque 3.unity
+    guid: d1688b9bfcd99cd44a2df664b1a2d641
   m_configObjects: {}
